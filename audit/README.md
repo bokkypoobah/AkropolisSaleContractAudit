@@ -1,3 +1,9 @@
+## Recommendation
+
+* **LOW IMPORTANCE** In *SaleConfiguration*, `AET_RATE`, `HARD_CAP`, `TOTAL_SUPPLY` and `PUBLIC_SALE_SUPPLY` should be made *constant*
+* **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Something like
+  `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` should be used instead of *ether*
+
 ## Code Review
 
 * [ ] [code-review/Administrable.md](code-review/Administrable.md)
@@ -25,3 +31,4 @@
   * [ ] contract WhitelistedCrowdsale is Ownable
   * [ ]     using SafeMath for uint256;
 
+Using https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0
