@@ -389,15 +389,15 @@ waitUntil("startTime+20s", crowdsale.startTime(), 20);
 var sendContribution2Message = "Send Contribution #2 - Next Round";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + sendContribution2Message + " ----------");
-var sendContribution2_1Tx = eth.sendTransaction({from: account5, to: crowdsaleAddress, gas: 400000, value: web3.toWei("500", "ether")});
+var sendContribution2_1Tx = eth.sendTransaction({from: account5, to: crowdsaleAddress, gas: 400000, value: web3.toWei("5", "ether")});
 var sendContribution2_2Tx = eth.sendTransaction({from: account6, to: crowdsaleAddress, gas: 400000, value: web3.toWei("500", "ether")});
-var sendContribution2_3Tx = eth.sendTransaction({from: account7, to: crowdsaleAddress, gas: 400000, value: web3.toWei("5493", "ether")});
+var sendContribution2_3Tx = eth.sendTransaction({from: account7, to: crowdsaleAddress, gas: 400000, value: web3.toWei("5488", "ether")});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(sendContribution2_1Tx, sendContribution2Message + " - ac5 500 ETH");
+failIfTxStatusError(sendContribution2_1Tx, sendContribution2Message + " - ac5 5 ETH");
 failIfTxStatusError(sendContribution2_2Tx, sendContribution2Message + " - ac6 500 ETH");
-failIfTxStatusError(sendContribution2_3Tx, sendContribution2Message + " - ac7 5493 ETH");
+failIfTxStatusError(sendContribution2_3Tx, sendContribution2Message + " - ac7 5488 ETH");
 printTxData("sendContribution2_1Tx", sendContribution2_1Tx);
 printTxData("sendContribution2_2Tx", sendContribution2_2Tx);
 printTxData("sendContribution2_3Tx", sendContribution2_3Tx);

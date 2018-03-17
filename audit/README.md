@@ -6,8 +6,9 @@
 
 ## Code Review
 
-* [ ] [code-review/Administrable.md](code-review/Administrable.md)
-  * [ ] contract Administrable is Ownable
+* [x] [code-review/Administrable.md](code-review/Administrable.md)
+  * [x] contract Administrable is Ownable
+  * [ ] See notes in document
 * [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
   * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
 * [ ] [code-review/AkropolisToken.md](code-review/AkropolisToken.md)
@@ -22,11 +23,12 @@
   * [ ]     using SafeERC20 for ERC20Basic;
 * [ ] [code-review/Migrations.md](code-review/Migrations.md)
   * [ ] contract Migrations
-* [ ] [code-review/SaleConfiguration.md](code-review/SaleConfiguration.md)
-  * [ ] contract SaleConfiguration
-* [ ] [code-review/Whitelist.md](code-review/Whitelist.md)
-  * [ ] contract Whitelist is Administrable
-  * [ ]     using SafeMath for uint256;
+* [x] [code-review/SaleConfiguration.md](code-review/SaleConfiguration.md)
+  * [x] contract SaleConfiguration
+  * [ ] See notes in document
+* [x] [code-review/Whitelist.md](code-review/Whitelist.md)
+  * [x] contract Whitelist is Administrable
+  * [x]     using SafeMath for uint256;
 * [ ] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
   * [ ] contract WhitelistedCrowdsale is Ownable
   * [ ]     using SafeMath for uint256;
