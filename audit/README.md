@@ -39,6 +39,7 @@ This audit has been conducted on Akropolis' source code in commits
 * **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Something like
   `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` should be used instead of *ether*
 * **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
+* **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
 
 <br />
 
@@ -129,8 +130,6 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 * [x] [code-review/AkropolisToken.md](code-review/AkropolisToken.md)
   * [x] contract AkropolisToken is MintableToken, PausableToken
   * [ ] See **NOTE** in document
-* [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
-  * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
 * [ ] [code-review/AllocationsManager.md](code-review/AllocationsManager.md)
   * [ ] contract AllocationsManager is Administrable, Pausable, SaleConfiguration
   * [ ]     using SafeERC20 for AkropolisToken;
@@ -139,8 +138,6 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
   * [ ] contract LinearTokenVesting is Ownable
   * [ ]     using SafeMath for uint256;
   * [ ]     using SafeERC20 for ERC20Basic;
-* [ ] [code-review/Migrations.md](code-review/Migrations.md)
-  * [ ] contract Migrations
 * [x] [code-review/SaleConfiguration.md](code-review/SaleConfiguration.md)
   * [x] contract SaleConfiguration
   * [ ] See **NOTE** in document
@@ -150,6 +147,16 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 * [ ] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
   * [ ] contract WhitelistedCrowdsale is Ownable
   * [ ]     using SafeMath for uint256;
+* [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
+  * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
+
+<br />
+
+### Excluded Files
+
+Excluded from this review as the following contract is used for testing:
+
+* [../contracts/Migrations.sol](../contracts/Migrations.sol)
 
 <br />
 

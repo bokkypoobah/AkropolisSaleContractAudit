@@ -453,7 +453,7 @@ function printWhitelistContractDetails() {
       var address = contract.indexedWhitelist(i);
       var index = contract.whitelist(address);
       var tier = contract.tiers(address);
-      console.log("RESULT: whitelist(" + i + ")=" + address + ", " + index + ", " + tier);
+      console.log("RESULT: whitelist(" + i + ")=" + address + ", index=" + index + ", tier=" + tier);
     }
 
     var latestBlock = eth.blockNumber;

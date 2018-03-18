@@ -7,8 +7,10 @@ Source file [../../contracts/AllocationsManager.sol](../../contracts/Allocations
 <hr />
 
 ```javascript
+// BK Ok
 pragma solidity ^0.4.18;
 
+// BK Next 8 Ok
 import "zeppelin-solidity/contracts/crowdsale/CappedCrowdsale.sol";
 import "zeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
 import "zeppelin-solidity/contracts/crowdsale/FinalizableCrowdsale.sol";
@@ -19,17 +21,23 @@ import "./LinearTokenVesting.sol";
 import "./SaleConfiguration.sol";
 
 
+// BK NOTE - Pausable is not used
+// BK Ok
 contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
+    // BK Next 2 Ok
     using SafeERC20 for AkropolisToken;
     using SafeMath for uint256;
 
 
+    // BK Ok - Events
     event AllocationRegistered(address indexed investor, uint256 value, uint256 vestingValue, uint256 cliff, uint256 vestingPeriod);
     event AllocationDistributed(address indexed investor, uint256 value, uint256 vestingValue, uint256 cliff, uint256 vestingPeriod);
     event TokensReclaimed(address indexed newTokenOwner, uint256 valueReclaimed);
 
+    // BK Ok - Enum
     enum AllocationStatus {REGISTERED, DISTRIBUTED}
 
+    // BK Next block Ok
     struct Allocation {
         uint256 index;
         uint256 value;

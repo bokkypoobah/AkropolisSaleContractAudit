@@ -251,7 +251,20 @@ console.log("RESULT: ");
 // BK 17/03/18 Tested on different positions in the list
 if (false) {
 // -----------------------------------------------------------------------------
-var removeFromWhitelist_Message = "Remove Address From Whitelist";
+var removeFromWhitelist_Message = "Remove Address From Whitelist #1";
+// -----------------------------------------------------------------------------
+console.log("RESULT: ---------- " + removeFromWhitelist_Message + " ----------");
+var removeFromWhitelist_1Tx = whitelist.removeFromWhitelist(account7, {from: adminAccount, gas: 200000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+failIfTxStatusError(removeFromWhitelist_1Tx, removeFromWhitelist_Message + " - remove ac7");
+printTxData("removeFromWhitelist_1Tx", removeFromWhitelist_1Tx);
+printWhitelistContractDetails();
+console.log("RESULT: ");
+
+// -----------------------------------------------------------------------------
+var removeFromWhitelist_Message = "Remove Address From Whitelist #2";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + removeFromWhitelist_Message + " ----------");
 var removeFromWhitelist_1Tx = whitelist.removeFromWhitelist(account5, {from: adminAccount, gas: 200000, gasPrice: defaultGasPrice});
@@ -259,6 +272,19 @@ while (txpool.status.pending > 0) {
 }
 printBalances();
 failIfTxStatusError(removeFromWhitelist_1Tx, removeFromWhitelist_Message + " - remove ac5");
+printTxData("removeFromWhitelist_1Tx", removeFromWhitelist_1Tx);
+printWhitelistContractDetails();
+console.log("RESULT: ");
+
+// -----------------------------------------------------------------------------
+var removeFromWhitelist_Message = "Remove Address From Whitelist #3";
+// -----------------------------------------------------------------------------
+console.log("RESULT: ---------- " + removeFromWhitelist_Message + " ----------");
+var removeFromWhitelist_1Tx = whitelist.removeFromWhitelist(account6, {from: adminAccount, gas: 200000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+failIfTxStatusError(removeFromWhitelist_1Tx, removeFromWhitelist_Message + " - remove ac6");
 printTxData("removeFromWhitelist_1Tx", removeFromWhitelist_1Tx);
 printWhitelistContractDetails();
 console.log("RESULT: ");
