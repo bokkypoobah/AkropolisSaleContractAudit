@@ -7,8 +7,11 @@ Source file [../../contracts/WhitelistedCrowdsale.sol](../../contracts/Whitelist
 <hr />
 
 ```javascript
+// BK Ok
 pragma solidity ^0.4.18;
 
+// BK NOTE - Crowdsale.sol included twice
+// BK Next 6 Ok
 import 'zeppelin-solidity/contracts/math/SafeMath.sol';
 import 'zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';
 import 'zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';

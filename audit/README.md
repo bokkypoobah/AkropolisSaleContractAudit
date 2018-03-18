@@ -36,10 +36,15 @@ This audit has been conducted on Akropolis' source code in commits
 ## Recommendation
 
 * **LOW IMPORTANCE** In *SaleConfiguration*, `AET_RATE`, `HARD_CAP`, `TOTAL_SUPPLY` and `PUBLIC_SALE_SUPPLY` should be made *constant*
-* **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Something like
-  `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` should be used instead of *ether*
+* **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Use something
+  like `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` instead of *ether*, for clarity
 * **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
 * **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
+* **HIGH IMPORTANCE** In *AllocationsManager*, anyone can execute `removeAllocation(...)` to remove someone else's allocations
+* **LOW IMPORTANCE** In *WhitelistedCrowdsale*, *Crowdsale.sol* is imported twice
+* **LOW IMPORTANCE** In *WhitelistedCrowdsale*, the comment "Tier 3: Can enter the crowdsale from round 3, there are no limits
+  for this tier" is inaccurate. *SaleConfiguration* has a `MAX_TIER_3 = 3 ether`, and this is checked in *AkropolisCrowdsale*
+  `bool isBelowCap = msg.value <= getAvailableCap(msg.sender)`
 
 <br />
 
@@ -107,16 +112,16 @@ Details of the testing environment can be found in [test](test).
 The following functions were tested using the script [test/01_test1.sh](test/01_test1.sh) with the summary results saved
 in [test/test1results.txt](test/test1results.txt) and the detailed output saved in [test/test1output.txt](test/test1output.txt):
 
-* [x] Deploy crowdsale contract
-  * [x] Deploy token contract
-  * [x] Tokens distributed to `strategicPartnersPools` accounts
-* [x] Contribute during the `RESTRICTED_PERIOD_DURATION`
-* [x] Contribute after the `RESTRICTED_PERIOD_DURATION`
-* [x] Finalise crowdsale
-* [x] Claim tokens, claim all tokens
-* [x] Refund ethers, refund all ethers
-* [x] Finalise refund
-* [x] `transfer(...)`, `approve(...)` and `transferFrom(...)`
+* [ ] Deploy crowdsale contract
+  * [ ] Deploy token contract
+  * [ ] Tokens distributed to `strategicPartnersPools` accounts
+* [ ] Contribute during the `RESTRICTED_PERIOD_DURATION`
+* [ ] Contribute after the `RESTRICTED_PERIOD_DURATION`
+* [ ] Finalise crowdsale
+* [ ] Claim tokens, claim all tokens
+* [ ] Refund ethers, refund all ethers
+* [ ] Finalise refund
+* [ ] `transfer(...)`, `approve(...)` and `transferFrom(...)`
 
 <br />
 
@@ -132,21 +137,21 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
   * [ ] See **NOTE** in document
 * [ ] [code-review/AllocationsManager.md](code-review/AllocationsManager.md)
   * [ ] contract AllocationsManager is Administrable, Pausable, SaleConfiguration
-  * [ ]     using SafeERC20 for AkropolisToken;
-  * [ ]     using SafeMath for uint256;
+    * [ ] using SafeERC20 for AkropolisToken
+    * [ ] using SafeMath for uint256
 * [ ] [code-review/LinearTokenVesting.md](code-review/LinearTokenVesting.md)
   * [ ] contract LinearTokenVesting is Ownable
-  * [ ]     using SafeMath for uint256;
-  * [ ]     using SafeERC20 for ERC20Basic;
+    * [ ] using SafeMath for uint256
+    * [ ] using SafeERC20 for ERC20Basic
 * [x] [code-review/SaleConfiguration.md](code-review/SaleConfiguration.md)
   * [x] contract SaleConfiguration
   * [ ] See **NOTE** in document
 * [x] [code-review/Whitelist.md](code-review/Whitelist.md)
   * [x] contract Whitelist is Administrable
-  * [x]     using SafeMath for uint256;
+    * [x] using SafeMath for uint256
 * [ ] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
   * [ ] contract WhitelistedCrowdsale is Ownable
-  * [ ]     using SafeMath for uint256;
+    * [ ] using SafeMath for uint256
 * [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
   * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
 

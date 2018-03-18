@@ -7,8 +7,10 @@ Source file [../../contracts/LinearTokenVesting.sol](../../contracts/LinearToken
 <hr />
 
 ```javascript
+// BK Ok
 pragma solidity ^0.4.18;
 
+// BK Next 4 Ok
 import "zeppelin-solidity/contracts/token/ERC20Basic.sol";
 import "zeppelin-solidity/contracts/token/SafeERC20.sol";
 import "zeppelin-solidity/contracts/ownership/Ownable.sol";
@@ -19,25 +21,33 @@ import "zeppelin-solidity/contracts/math/SafeMath.sol";
  * @dev A token holder contract that can release its tokens pro-rata with the passing time
  * starting after the cliff period
  */
+// BK Ok
 contract LinearTokenVesting is Ownable {
+    // BK Next 2 Ok
     using SafeMath for uint256;
     using SafeERC20 for ERC20Basic;
 
+    // BK Ok - Event
     event Released(uint256 amount);
 
     // beneficiary of tokens after they are released
+    // BK Ok
     address public beneficiary;
 
     // start of the vesting period
+    // BK Ok
     uint256 public start;
 
     // duration of the vesting period
+    // BK Ok
     uint256 public duration;
 
     // time after which tokens begin to vest
+    // BK Ok
     uint256 public cliff;
 
     // amounts of tokens that has been already released
+    // BK Ok
     mapping (address => uint256) public released;
 
     /**
