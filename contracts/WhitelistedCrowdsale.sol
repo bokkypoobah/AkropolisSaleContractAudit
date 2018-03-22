@@ -1,6 +1,8 @@
 pragma solidity ^0.4.18;
 
 import 'zeppelin-solidity/contracts/math/SafeMath.sol';
+import 'zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';
+import 'zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 import './Whitelist.sol';
 import "./SaleConfiguration.sol";
@@ -9,12 +11,10 @@ import "./SaleConfiguration.sol";
  * @title WhitelistedCrowdsale
  * @dev Adding a support for whitelisting users during a crowdsale.
  * Whitelisted users will be divided into 3 tiers
- * Each tier has it's own min and max contribution limits
- * Tier 1: Can enter the crowdsale from round 1
- * Tier 2: Can enter the crowdsale from round 2
- * Tier 3: Can enter the crowdsale from round 3
+ * Tier 1: Can enter the crowdsale from round 1, have it's own min and max contribution limits
+ * Tier 2: Can enter the crowdsale from round 2, have it's own min and max contribution limits
+ * Tier 3: Can enter the crowdsale from round 3, there are no limits for this tier
  * Limits are awarded per user not per round
- * Min contribution limits are waived in round 3 so all of the users can spend the remaining cap
  */
 contract WhitelistedCrowdsale is Ownable {
     using SafeMath for uint256;
