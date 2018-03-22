@@ -9,7 +9,8 @@
 Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crowdsale smart contracts for Akropolis.
 
 This audit has been conducted on Akropolis' source code in commits
-[7a929f9](https://github.com/akropolisio/akropolis-sale/commit/7a929f9124be8010f8561be7483332c5344beb1a).
+[7a929f9](https://github.com/akropolisio/akropolis-sale/commit/7a929f9124be8010f8561be7483332c5344beb1a) and
+[ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f).
 
 **TODO** - Check that no potential vulnerabilities have been identified in the crowdsale and token contracts.
 
@@ -33,18 +34,32 @@ This audit has been conducted on Akropolis' source code in commits
 
 <hr />
 
-## Recommendation
+## Recommendations
 
-* **LOW IMPORTANCE** In *SaleConfiguration*, `AET_RATE`, `HARD_CAP`, `TOTAL_SUPPLY` and `PUBLIC_SALE_SUPPLY` should be made *constant*
-* **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Use something
-  like `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` instead of *ether*, for clarity
+### Outstanding
 * **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
 * **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
+
+<br />
+
+### Completed
+
 * **HIGH IMPORTANCE** In *AllocationsManager*, anyone can execute `removeAllocation(...)` to remove someone else's allocations
+  * [x] Fixed in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
+* **LOW IMPORTANCE** In *LinearTokenVesting*, simplify the user's process of unlocking vested tokens by storing a reference to
+  the token contract address
+  * [x] Updated in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
+* **LOW IMPORTANCE** In *SaleConfiguration*, `AET_RATE`, `HARD_CAP`, `TOTAL_SUPPLY` and `PUBLIC_SALE_SUPPLY` should be made *constant*
+  * [x] Updated in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
+* **LOW IMPORTANCE** In *SaleConfiguration*, `TOTAL_SUPPLY` to `DEVELOPMENT_FUND_VALUE` are tokens and not *ether*. Use something
+  like `* DECIMALSFACTOR` where `uint256 public constant DECIMALSFACTOR = 10**uint256(decimals)` instead of *ether*, for clarity
+  * [x] Updated in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
 * **LOW IMPORTANCE** In *WhitelistedCrowdsale*, *Crowdsale.sol* is imported twice
+  * [x] Removed in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
 * **LOW IMPORTANCE** In *WhitelistedCrowdsale*, the comment "Tier 3: Can enter the crowdsale from round 3, there are no limits
   for this tier" is inaccurate. *SaleConfiguration* has a `MAX_TIER_3 = 3 ether`, and this is checked in *AkropolisCrowdsale*
   `bool isBelowCap = msg.value <= getAvailableCap(msg.sender)`
+  * [x] Updated in [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f)
 
 <br />
 

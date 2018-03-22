@@ -141,7 +141,7 @@ contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
         // BK Ok - Vested value
         if (allocation.vestingValue > 0) {
             // BK Ok
-            LinearTokenVesting vesting = new LinearTokenVesting(_investor, allocation.cliff, allocation.vestingPeriod);
+            LinearTokenVesting vesting = new LinearTokenVesting(token, _investor, allocation.cliff, allocation.vestingPeriod);
             // BK Ok
             vesting.transferOwnership(owner);
             // BK Ok
@@ -223,7 +223,7 @@ contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
     * @dev Removes an allocation for a given address
     */
     // BK NOTE - Anyone can remove anyone else's allocations
-    function removeAllocation(address _investor) public returns(bool) {
+    function removeAllocation(address _investor) public onlyAdmin returns(bool) {
         // BK Ok
         require(allocations[_investor].value > 0);
 
