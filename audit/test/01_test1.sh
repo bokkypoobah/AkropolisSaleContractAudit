@@ -561,11 +561,11 @@ var team3VestingContractAddress = teamAllocation.getVesting(team3Account);
 addAccount(team3VestingContractAddress, "Team #3 Vesting Contract");
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + claimVesting0_Message + " ----------");
-var claimVesting0_1Tx = team1VestingContract.release(tokenAddress, {from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
+var claimVesting0_1Tx = team1VestingContract.release({from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(claimVesting0_1Tx, claimVesting0_Message + " - team1VestingContract.release(token)");
+failIfTxStatusError(claimVesting0_1Tx, claimVesting0_Message + " - team1VestingContract.release()");
 printTxData("claimVesting0_1Tx", claimVesting0_1Tx);
 printAllocationContractDetails("team", teamAllocationAddress, allocationAbi, true);
 printVestingContractDetails(team1VestingContractAddress, vestingAbi, true);
@@ -580,11 +580,11 @@ waitUntil("vesting.start+30s", team1VestingContract.start(), 30);
 var claimVesting1_Message = "Claim Vesting #2";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + claimVesting1_Message + " ----------");
-var claimVesting1_1Tx = team1VestingContract.release(tokenAddress, {from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
+var claimVesting1_1Tx = team1VestingContract.release({from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(claimVesting1_1Tx, claimVesting1_Message + " - team1VestingContract.release(token)");
+failIfTxStatusError(claimVesting1_1Tx, claimVesting1_Message + " - team1VestingContract.release()");
 printTxData("claimVesting1_1Tx", claimVesting1_1Tx);
 printAllocationContractDetails("team", teamAllocationAddress, allocationAbi, true);
 printVestingContractDetails(team1VestingContractAddress, vestingAbi, true);
@@ -599,11 +599,11 @@ waitUntil("vesting.start+45s", team1VestingContract.start(), 45);
 var claimVesting2_Message = "Claim Vesting #3";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + claimVesting2_Message + " ----------");
-var claimVesting2_1Tx = team1VestingContract.release(tokenAddress, {from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
+var claimVesting2_1Tx = team1VestingContract.release({from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(claimVesting2_1Tx, claimVesting2_Message + " - team1VestingContract.release(token)");
+failIfTxStatusError(claimVesting2_1Tx, claimVesting2_Message + " - team1VestingContract.release()");
 printTxData("claimVesting2_1Tx", claimVesting2_1Tx);
 printAllocationContractDetails("team", teamAllocationAddress, allocationAbi, true);
 printVestingContractDetails(team1VestingContractAddress, vestingAbi, true);
@@ -618,11 +618,11 @@ waitUntil("vesting.start+60s", team1VestingContract.start(), 60);
 var claimVesting3_Message = "Claim Vesting #4";
 // -----------------------------------------------------------------------------
 console.log("RESULT: ---------- " + claimVesting3_Message + " ----------");
-var claimVesting3_1Tx = team1VestingContract.release(tokenAddress, {from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
+var claimVesting3_1Tx = team1VestingContract.release({from: team1Account, gas: 1000000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(claimVesting3_1Tx, claimVesting3_Message + " - team1VestingContract.release(token)");
+failIfTxStatusError(claimVesting3_1Tx, claimVesting3_Message + " - team1VestingContract.release()");
 printTxData("claimVesting3_1Tx", claimVesting3_1Tx);
 printAllocationContractDetails("team", teamAllocationAddress, allocationAbi, true);
 printVestingContractDetails(team1VestingContractAddress, vestingAbi, true);

@@ -39,6 +39,12 @@ This audit has been conducted on Akropolis' source code in commits
 ### Outstanding
 * **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
 * **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
+* **LOW IMPORTANCE** In *SaleConfiguration*, compiler warnings like `Warning: Initial value for constant variable has to be compile-time constant. This will fail to compile with the next breaking version change.`. `uint256 public constant MAX_ALLOCATION_VALUE = DECIMALS_FACTOR.mul(1000);` can be rewritten as `uint256 public constant MAX_ALLOCATION_VALUE = 1000 * DECIMALS_FACTOR;` as we know both
+values being multiplied
+* **LOW IMPORTANCE** In *SaleConfiguration*, consider using `uint8 public constant DECIMALS = 18;` and `uint256 public constant DECIMALS_FACTOR = 10**uint256(DECIMALS);` as the constant 18 is named as DECIMALS, for clarity
+* **LOW IMPORTANCE** In *AllocationsManager*, consider making `mapping(address => Allocation) allocations;` *public* as this assists in validations and troubleshooting
+* **LOW IMPORTANCE** In *WhitelistedCrowdsale*, consider making `uint256[] min = new uint[](4);` and `uint256[] max = new uint[](4);` *public* as this assists in validations and troubleshooting
+* **LOW IMPORTANCE** In *SaleConfiguration*, there is a `HARD_CAP = 6000 ether;`. Each contributing ETH generates 10,000 tokens as specified in `AET_RATE = 10000;`. For the maximum ETH contribution of 6,000 ETH, 60,000,000 tokens will be generated. There are 90,000,000 tokens that have been allocated to the crowdsale according to `PUBLIC_SALE_SUPPLY = DECIMALS_FACTOR.mul(90000000);`. The `AET_RATE`, `HARD_CAP` and `PUBLIC_SALE_SUPPLY` variables are not consistent. Is this because these rates will be updated just prior to the token sale contract deployment?
 
 <br />
 
@@ -150,10 +156,10 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 * [x] [code-review/AkropolisToken.md](code-review/AkropolisToken.md)
   * [x] contract AkropolisToken is MintableToken, PausableToken
   * [ ] See **NOTE** in document
-* [ ] [code-review/AllocationsManager.md](code-review/AllocationsManager.md)
-  * [ ] contract AllocationsManager is Administrable, Pausable, SaleConfiguration
-    * [ ] using SafeERC20 for AkropolisToken
-    * [ ] using SafeMath for uint256
+* [x] [code-review/AllocationsManager.md](code-review/AllocationsManager.md)
+  * [x] contract AllocationsManager is Administrable, Pausable, SaleConfiguration
+    * [x] using SafeERC20 for AkropolisToken
+    * [x] using SafeMath for uint256
 * [ ] [code-review/LinearTokenVesting.md](code-review/LinearTokenVesting.md)
   * [ ] contract LinearTokenVesting is Ownable
     * [ ] using SafeMath for uint256

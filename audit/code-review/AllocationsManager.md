@@ -222,7 +222,6 @@ contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
     /**
     * @dev Removes an allocation for a given address
     */
-    // BK NOTE - Anyone can remove anyone else's allocations
     function removeAllocation(address _investor) public onlyAdmin returns(bool) {
         // BK Ok
         require(allocations[_investor].value > 0);
@@ -232,14 +231,19 @@ contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
         // BK Ok
         address lastAddress = indexedAllocations[indexedAllocations.length.sub(1)];
         // BK Ok
-        // BK TODO - Check what happens when the last element is removed
         indexedAllocations[removalIndex] = lastAddress;
+        // BK Ok
         indexedAllocations.length = indexedAllocations.length.sub(1);
+        // BK Ok
         allocations[lastAddress].index = removalIndex;
 
+        // BK Ok
         totalAllocated = totalAllocated.sub(allocations[_investor].value);
+        // BK Ok
         totalAllocated = totalAllocated.sub(allocations[_investor].vestingValue);
+        // BK Ok
         delete allocations[_investor];
+        // BK Ok
         return true;
     }
 
