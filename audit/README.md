@@ -193,7 +193,7 @@ Excluded from this review as the following contract is used for testing:
 
 ### OpenZeppelin Include Files
 
-From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0
+From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0, as advised by Akropolis
 
 #### Maths
 
@@ -212,19 +212,19 @@ From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0
 
 #### Token
 
-* [ ] [code-review/BasicToken.md](code-review/BasicToken.md)
-  * [ ] contract BasicToken is ERC20Basic
-  * [ ]   using SafeMath for uint256;
-* [ ] [code-review/ERC20.md](code-review/ERC20.md)
-  * [ ] contract ERC20 is ERC20Basic
-* [ ] [code-review/ERC20Basic.md](code-review/ERC20Basic.md)
-  * [ ] contract ERC20Basic
-* [ ] [code-review/MintableToken.md](code-review/MintableToken.md)
-  * [ ] contract MintableToken is StandardToken, Ownable
-* [ ] [code-review/PausableToken.md](code-review/PausableToken.md)
-  * [ ] contract PausableToken is StandardToken, Pausable
-* [ ] [code-review/StandardToken.md](code-review/StandardToken.md)
-  * [ ] contract StandardToken is ERC20, BasicToken
+* [x] [code-review/ERC20Basic.md](code-review/ERC20Basic.md)
+  * [x] contract ERC20Basic
+* [x] [code-review/ERC20.md](code-review/ERC20.md)
+  * [x] contract ERC20 is ERC20Basic
+* [x] [code-review/BasicToken.md](code-review/BasicToken.md)
+  * [x] contract BasicToken is ERC20Basic
+    * [x] using SafeMath for uint256;
+* [x] [code-review/StandardToken.md](code-review/StandardToken.md)
+  * [x] contract StandardToken is ERC20, BasicToken
+* [x] [code-review/PausableToken.md](code-review/PausableToken.md)
+  * [x] contract PausableToken is StandardToken, Pausable
+* [x] [code-review/MintableToken.md](code-review/MintableToken.md)
+  * [x] contract MintableToken is StandardToken, Ownable
 
 #### Crowdsale
 
