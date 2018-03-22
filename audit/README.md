@@ -228,15 +228,15 @@ From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0, as advised b
 
 #### Crowdsale
 
-* [ ] [code-review/CappedCrowdsale.md](code-review/CappedCrowdsale.md)
-  * [ ] contract CappedCrowdsale is Crowdsale
-  * [ ]   using SafeMath for uint256;
-* [ ] [code-review/Crowdsale.md](code-review/Crowdsale.md)
-  * [ ] contract Crowdsale
-  * [ ]   using SafeMath for uint256;
-* [ ] [code-review/FinalizableCrowdsale.md](code-review/FinalizableCrowdsale.md)
-  * [ ] contract FinalizableCrowdsale is Crowdsale, Ownable
-  * [ ]   using SafeMath for uint256;
+* [x] [code-review/Crowdsale.md](code-review/Crowdsale.md)
+  * [x] contract Crowdsale
+    * [x] using SafeMath for uint256;
+* [x] [code-review/FinalizableCrowdsale.md](code-review/FinalizableCrowdsale.md)
+  * [x] contract FinalizableCrowdsale is Crowdsale, Ownable
+    * [x] using SafeMath for uint256;
+* [x] [code-review/CappedCrowdsale.md](code-review/CappedCrowdsale.md)
+  * [x] contract CappedCrowdsale is Crowdsale
+    * [x] using SafeMath for uint256;
 
 <br />
 
