@@ -18,22 +18,29 @@ import 'zeppelin-solidity/contracts/math/SafeMath.sol';
  */
 // BK Ok
 contract SaleConfiguration {
+    // BK Ok
     using SafeMath for uint256;
 
+    // BK NOTE - 18 should be a constant like DECIMALS
+    // BK Ok
     uint256 public constant DECIMALS_FACTOR = 10**uint256(18);
 
     //TODO: Update and verify values before going live
 
+    // BK NOTE - The compiler issues warnings with the `.mul(...)` below. Convert to x * DECIMALS_FACTOR
+    // BK Next 3 Ok
     uint256 public constant AET_RATE = 10000;
     uint256 public constant HARD_CAP = 6000 ether;
     uint256 public constant MAX_ALLOCATION_VALUE = DECIMALS_FACTOR.mul(1000);
 
+    // BK Next 5 Ok
     uint256 public constant TOTAL_SUPPLY = DECIMALS_FACTOR.mul(900000000);
     uint256 public constant PUBLIC_SALE_SUPPLY = DECIMALS_FACTOR.mul(90000000);
     uint256 public constant PRESALE_SUPPLY = DECIMALS_FACTOR.mul(180000000);
     uint256 public constant TEAM_SUPPLY = DECIMALS_FACTOR.mul(180000000);
     uint256 public constant ADVISORS_SUPPLY = DECIMALS_FACTOR.mul(49500000);
 
+    // BK Next 2 Ok
     uint256 public constant RESERVE_FUND_VALUE = DECIMALS_FACTOR.mul(180000000);
     uint256 public constant DEVELOPMENT_FUND_VALUE = DECIMALS_FACTOR.mul(220500000);
 

@@ -31,6 +31,7 @@ contract LinearTokenVesting is Ownable {
     event Released(uint256 amount);
 
     // AET token that is under vesting
+    // BK Ok
     AkropolisToken public token;
 
     // beneficiary of tokens after they are released
@@ -50,6 +51,7 @@ contract LinearTokenVesting is Ownable {
     uint256 public cliff;
 
     // amounts of the AET token that has been already released
+    // BK Ok
     uint256 public released;
 
     /**
@@ -60,12 +62,18 @@ contract LinearTokenVesting is Ownable {
      * @param _cliff duration in seconds after which tokens will begin to vest
      * @param _duration duration in seconds of the period in which the tokens will vest
      */
+    // BK Ok - Constructor, called by AllocationsManager
     function LinearTokenVesting(AkropolisToken _token, address _beneficiary, uint256 _cliff, uint256 _duration) public {
+        // BK Ok
         require(address(_token) != 0x0);
+        // BK Ok
         require(_beneficiary != 0x0);
+        // BK Ok
         require(_duration > 0);
+        // BK Ok
         require(_cliff <= _duration);
 
+        // BK Next 5 Ok
         token = _token;
         beneficiary = _beneficiary;
         duration = _duration;
@@ -76,42 +84,59 @@ contract LinearTokenVesting is Ownable {
     /**
      * @notice Transfers vested tokens to beneficiary.
      */
+    // BK Ok - Only beneficiary or crowdsale owner can execute this function
     function release() public {
+        // BK Ok
         require(msg.sender == owner || msg.sender == beneficiary);
 
+        // BK Ok
         uint256 unreleased = releasableAmount();
 
+        // BK Ok
         require(unreleased > 0);
 
+        // BK Ok
         released = released.add(unreleased);
 
+        // BK Ok
         token.safeTransfer(beneficiary, unreleased);
 
+        // BK Ok - Log event
         Released(unreleased);
     }
 
     /**
      * @dev Calculates the amount that has already vested but hasn't been released yet.
      */
+    // BK Ok - View function
     function releasableAmount() public view returns (uint256) {
+        // BK Ok
         return vestedAmount().sub(released);
     }
 
     /**
      * @dev Calculates the amount that has already vested.
      */
+    // BK Ok - View function
     function vestedAmount() public view returns (uint256) {
+        // BK Ok
         uint256 currentBalance = token.balanceOf(this);
+        // BK Ok
         uint256 totalBalance = currentBalance.add(released);
 
+        // BK Ok
         if (now < start.add(cliff)) {
+            // BK Ok
             return 0;
+        // BK Ok
         } else if (now >= start.add(duration)) {
+            // BK Ok
             return totalBalance;
+        // BK Ok
         } else {
+            // BK Ok
             return totalBalance.mul(now.sub(start)).div(duration);
         }
     }
 }
-
 ```
