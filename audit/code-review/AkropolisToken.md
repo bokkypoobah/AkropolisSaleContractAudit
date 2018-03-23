@@ -22,17 +22,16 @@ import "zeppelin-solidity/contracts/token/PausableToken.sol";
 // BK Ok
 contract AkropolisToken is MintableToken, PausableToken {
 
-    // BK NOTE - Next 4 variables can be marked `constant`
     // BK Ok
-    string public name = "Akropolis External Token";
+    string public constant name = "Akropolis External Token";
 
     // BK Ok
-    uint8 public decimals = 18;
+    uint8 public constant decimals = 18;
 
     // BK Ok
-    string public symbol = "AET";
+    string public constant symbol = "AET";
 
     // BK Ok
-    string public version = "AET 1.0";
+    string public constant version = "AET 1.0";
 }
 ```

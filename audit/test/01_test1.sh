@@ -64,8 +64,6 @@ printf "REFUND_END_DATE    = '$REFUND_END_DATE' '$REFUND_END_DATE_S'\n" | tee -a
 `perl -pi -e "s/ROUND_DURATION \= 3 days;/ROUND_DURATION \= 10 seconds;/" *.sol`
 `perl -pi -e "s/Whitelist whitelist;/Whitelist public whitelist;/" *.sol`
 `perl -pi -e "s/SaleConfiguration config;/SaleConfiguration public config;/" *.sol`
-`perl -pi -e "s/uint256\[\] min/uint256\[\] public min/" *.sol`
-`perl -pi -e "s/uint256\[\] max/uint256\[\] public max/" *.sol`
 `perl -pi -e "s/MAX_TIER_2 \= 5 ether;/MAX_TIER_2 \= 1000 ether;/" *.sol`
 `perl -pi -e "s/MAX_TIER_3 \= 3 ether;/MAX_TIER_3 \= 10000 ether;/" *.sol`
 `perl -pi -e "s/mapping\(address \=\> Allocation\) allocations;/mapping\(address \=\> Allocation\) public allocations;/" *.sol`

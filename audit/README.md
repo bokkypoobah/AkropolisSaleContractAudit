@@ -9,8 +9,9 @@
 Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crowdsale smart contracts for Akropolis.
 
 This audit has been conducted on Akropolis' source code in commits
-[7a929f9](https://github.com/akropolisio/akropolis-sale/commit/7a929f9124be8010f8561be7483332c5344beb1a) and
-[ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f).
+[7a929f9](https://github.com/akropolisio/akropolis-sale/commit/7a929f9124be8010f8561be7483332c5344beb1a),
+[ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f) and
+[74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad).
 
 **TODO** - Check that no potential vulnerabilities have been identified in the crowdsale and token contracts.
 
@@ -36,16 +37,6 @@ This audit has been conducted on Akropolis' source code in commits
 
 ## Recommendations
 
-### Outstanding
-* **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
-* **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
-* **LOW IMPORTANCE** In *SaleConfiguration*, compiler warnings like `Warning: Initial value for constant variable has to be compile-time constant. This will fail to compile with the next breaking version change.`. `uint256 public constant MAX_ALLOCATION_VALUE = DECIMALS_FACTOR.mul(1000);` can be rewritten as `uint256 public constant MAX_ALLOCATION_VALUE = 1000 * DECIMALS_FACTOR;` as we know both
-values being multiplied
-* **LOW IMPORTANCE** In *SaleConfiguration*, consider using `uint8 public constant DECIMALS = 18;` and `uint256 public constant DECIMALS_FACTOR = 10**uint256(DECIMALS);` as the constant 18 is named as DECIMALS, for clarity
-* **LOW IMPORTANCE** In *WhitelistedCrowdsale*, consider making `uint256[] min = new uint[](4);` and `uint256[] max = new uint[](4);` *public* as this assists in validations and troubleshooting
-
-<br />
-
 ### Completed
 
 * **HIGH IMPORTANCE** In *AllocationsManager*, anyone can execute `removeAllocation(...)` to remove someone else's allocations
@@ -68,6 +59,16 @@ values being multiplied
   * [x] Akropolis responded that the rate is a placeholder and will be updated just prior to the token sale contract deployment
 * **LOW IMPORTANCE** In *AllocationsManager*, consider making `mapping(address => Allocation) allocations;` *public* as this assists in validations and troubleshooting
   * [x] Akropolis responded that there are alternate functions to access the data and won't be setting this data structure to *public*
+* **LOW IMPORTANCE** In *AkropolisToken*, `name`, `decimals`, `symbol` and `version` should all be marked *constant*
+  * [x] Updated in [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad)
+* **LOW IMPORTANCE** In *AllocationsManager*, modifiers and functions from `Pausable` that is inherited are not used
+  * [x] Removed `Pausable` in [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad)
+* **LOW IMPORTANCE** In *SaleConfiguration*, compiler warnings like `Warning: Initial value for constant variable has to be compile-time constant. This will fail to compile with the next breaking version change.`. `uint256 public constant MAX_ALLOCATION_VALUE = DECIMALS_FACTOR.mul(1000);` can be rewritten as `uint256 public constant MAX_ALLOCATION_VALUE = 1000 * DECIMALS_FACTOR;` as we know both values being multiplied
+  * [x] Updated in [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad)
+* **LOW IMPORTANCE** In *SaleConfiguration*, consider using `uint8 public constant DECIMALS = 18;` and `uint256 public constant DECIMALS_FACTOR = 10**uint256(DECIMALS);` as the constant 18 is named as DECIMALS, for clarity
+  * [x] Updated in [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad)
+* **LOW IMPORTANCE** In *WhitelistedCrowdsale*, consider making `uint256[] min = new uint[](4);` and `uint256[] max = new uint[](4);` *public* as this assists in validations and troubleshooting
+  * [x] Updated in [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad)
 
 <br />
 
@@ -242,4 +243,4 @@ From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0, as advised b
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - Mar 19 2018. The MIT Licence.
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - Mar 23 2018. The MIT Licence.

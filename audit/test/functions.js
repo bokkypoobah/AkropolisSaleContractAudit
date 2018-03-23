@@ -525,7 +525,6 @@ function printAllocationContractDetails(name, address, abi, updateFromBlock) {
   if (address != null && abi != null) {
     var contract = eth.contract(abi).at(address);
     console.log("RESULT: " + name + "Allocation.owner=" + contract.owner());
-    console.log("RESULT: " + name + "Allocation.paused=" + contract.paused());
     console.log("RESULT: " + name + "Allocation.token=" + contract.token());
     console.log("RESULT: " + name + "Allocation.totalAllocated=" + contract.totalAllocated() + " " + contract.totalAllocated().shift(-18));
 

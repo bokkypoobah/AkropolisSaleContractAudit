@@ -21,9 +21,8 @@ import "./LinearTokenVesting.sol";
 import "./SaleConfiguration.sol";
 
 
-// BK NOTE - Pausable is not used
 // BK Ok
-contract AllocationsManager is Administrable, Pausable, SaleConfiguration {
+contract AllocationsManager is Administrable, SaleConfiguration {
     // BK Next 2 Ok
     using SafeERC20 for AkropolisToken;
     using SafeMath for uint256;
