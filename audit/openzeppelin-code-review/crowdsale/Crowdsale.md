@@ -93,7 +93,7 @@ contract Crowdsale {
   }
 
   // low level token purchase function
-  // BK Ok - Any account can call this, sending ETH
+  // BK Ok - Any account can call this, sending ETH. But this function is overridden by AkropolisCrowdsale.buyTokens()
   function buyTokens(address beneficiary) public payable {
     // BK Ok
     require(beneficiary != address(0));

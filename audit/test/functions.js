@@ -381,6 +381,7 @@ function printCrowdsaleContractDetails() {
     var contract = eth.contract(crowdsaleContractAbi).at(crowdsaleContractAddress);
     console.log("RESULT: crowdsale.owner=" + contract.owner());
     console.log("RESULT: crowdsale.token=" + contract.token());
+    console.log("RESULT: crowdsale.wallet=" + contract.wallet());
     console.log("RESULT: crowdsale.tokensSold=" + contract.tokensSold() + " " + contract.tokensSold().shift(-18) + " tokens");
 
     console.log("RESULT: crowdsale.presaleAllocations=" + contract.presaleAllocations());

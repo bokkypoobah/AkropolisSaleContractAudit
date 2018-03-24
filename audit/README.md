@@ -1,7 +1,5 @@
 # Akropolis Crowdsale Contract Audit
 
-**Status: Work in progress**
-
 ## Summary
 
 [Akropolis](http://akropolis.io/) intends to run a crowdsale in Q1/Q2 2018.
@@ -13,7 +11,7 @@ This audit has been conducted on Akropolis' source code in commits
 [ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f) and
 [74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad).
 
-**TODO** - Check that no potential vulnerabilities have been identified in the crowdsale and token contracts.
+No potential vulnerabilities have been identified in the crowdsale, whitelist, allocation, vesting and token contracts.
 
 <br />
 
@@ -76,7 +74,7 @@ This audit has been conducted on Akropolis' source code in commits
 
 ## Potential Vulnerabilities
 
-**TODO** - Check no potential vulnerabilities have been identified in the crowdsale and token contracts.
+No potential vulnerabilities have been identified in the crowdsale, whitelist, allocation, vesting and token contracts.
 
 <br />
 
@@ -123,7 +121,7 @@ matches the audited source code, and that the deployment parameters are correctl
 
 ## Risks
 
-**TODO**
+There are many variables that need to be set correctly in this crowdsale and allocation contracts. Use a script to extract all critical variables and carefully check that these variables are set correctly, especially the manually configured parameters.
 
 <br />
 
@@ -177,33 +175,29 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 * [x] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
   * [x] contract WhitelistedCrowdsale is Ownable
     * [x] using SafeMath for uint256
-* [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
-  * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
+* [x] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
+  * [x] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
 
 <br />
 
 ### Tracing Crowdsale Contracts Hierarchy Overloaded Functions
 
-contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
-  function validPurchase() internal
-  function hasEnded() public
-  function finalization() internal
-
-contract CappedCrowdsale is Crowdsale
-  function validPurchase() internal
-  function hasEnded() public
-
-contract FinalizableCrowdsale is Crowdsale, Ownable
-  function finalize() public
-  function finalization() internal {
-
-contract WhitelistedCrowdsale is Ownable
-
-contract Crowdsale
-  function buyTokens(address beneficiary) public
-  function forwardFunds() internal
-  function validPurchase() internal
-  function hasEnded() public
+* contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
+  * function validPurchase() internal
+  * function hasEnded() public
+  * function finalization() internal
+* contract CappedCrowdsale is Crowdsale
+  * function validPurchase() internal
+  * function hasEnded() public
+* contract FinalizableCrowdsale is Crowdsale, Ownable
+  * function finalize() public
+  * function finalization() internal {
+* contract WhitelistedCrowdsale is Ownable
+* contract Crowdsale
+  * function buyTokens(address beneficiary) public
+  * function forwardFunds() internal
+  * function validPurchase() internal
+  * function hasEnded() public
 
 <br />
 
@@ -266,4 +260,4 @@ From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0, as advised b
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - Mar 23 2018. The MIT Licence.
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - Mar 25 2018. The MIT Licence.
