@@ -161,9 +161,8 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
   * [x] contract Administrable is Ownable
 * [x] [code-review/AkropolisToken.md](code-review/AkropolisToken.md)
   * [x] contract AkropolisToken is MintableToken, PausableToken
-  * [ ] See **NOTE** in document
 * [x] [code-review/AllocationsManager.md](code-review/AllocationsManager.md)
-  * [x] contract AllocationsManager is Administrable, Pausable, SaleConfiguration
+  * [x] contract AllocationsManager is Administrable, SaleConfiguration
     * [x] using SafeERC20 for AkropolisToken
     * [x] using SafeMath for uint256
 * [x] [code-review/LinearTokenVesting.md](code-review/LinearTokenVesting.md)
@@ -172,15 +171,39 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
     * [x] using SafeERC20 for ERC20Basic
 * [x] [code-review/SaleConfiguration.md](code-review/SaleConfiguration.md)
   * [x] contract SaleConfiguration
-  * [ ] See **NOTE** in document
 * [x] [code-review/Whitelist.md](code-review/Whitelist.md)
   * [x] contract Whitelist is Administrable
     * [x] using SafeMath for uint256
-* [ ] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
-  * [ ] contract WhitelistedCrowdsale is Ownable
-    * [ ] using SafeMath for uint256
+* [x] [code-review/WhitelistedCrowdsale.md](code-review/WhitelistedCrowdsale.md)
+  * [x] contract WhitelistedCrowdsale is Ownable
+    * [x] using SafeMath for uint256
 * [ ] [code-review/AkropolisCrowdsale.md](code-review/AkropolisCrowdsale.md)
   * [ ] contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
+
+<br />
+
+### Tracing Crowdsale Contracts Hierarchy Overloaded Functions
+
+contract AkropolisCrowdsale is CappedCrowdsale, FinalizableCrowdsale, WhitelistedCrowdsale
+  function validPurchase() internal
+  function hasEnded() public
+  function finalization() internal
+
+contract CappedCrowdsale is Crowdsale
+  function validPurchase() internal
+  function hasEnded() public
+
+contract FinalizableCrowdsale is Crowdsale, Ownable
+  function finalize() public
+  function finalization() internal {
+
+contract WhitelistedCrowdsale is Ownable
+
+contract Crowdsale
+  function buyTokens(address beneficiary) public
+  function forwardFunds() internal
+  function validPurchase() internal
+  function hasEnded() public
 
 <br />
 
