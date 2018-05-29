@@ -9,6 +9,11 @@ coverage.json
 # IDE
 .idea
 
+# Environment variables
+.env
+/test-config.json
+/migrations-sale/before-sale-deployment.json
+
 .DS_Store
 .project
 .settings
