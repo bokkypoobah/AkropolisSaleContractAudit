@@ -11,10 +11,10 @@ Source file [../../contracts/LinearTokenVesting.sol](../../contracts/LinearToken
 pragma solidity ^0.4.18;
 
 // BK Next 4 Ok
-import "zeppelin-solidity/contracts/token/ERC20Basic.sol";
 import "zeppelin-solidity/contracts/token/SafeERC20.sol";
 import "zeppelin-solidity/contracts/ownership/Ownable.sol";
 import "zeppelin-solidity/contracts/math/SafeMath.sol";
+import "./AkropolisToken.sol";
 
 /**
  * @title LinearTokenVesting
@@ -30,7 +30,7 @@ contract LinearTokenVesting is Ownable {
     // BK Ok - Event
     event Released(uint256 amount);
 
-    // AET token that is under vesting
+    // AKT token that is under vesting
     // BK Ok
     AkropolisToken public token;
 
@@ -50,14 +50,14 @@ contract LinearTokenVesting is Ownable {
     // BK Ok
     uint256 public cliff;
 
-    // amounts of the AET token that has been already released
+    // amounts of the AKT token that has been already released
     // BK Ok
     uint256 public released;
 
     /**
-     * @dev Creates a vesting contract that vests its balance of the AET token to the
+     * @dev Creates a vesting contract that vests its balance of the AKT token to the
      * _beneficiary, gradually in a linear fashion until _start + _duration.
-     * @param _token address of the AET token that is under vesting
+     * @param _token address of the AKT token that is under vesting
      * @param _beneficiary address of the beneficiary to whom vested tokens are transferred
      * @param _cliff duration in seconds after which tokens will begin to vest
      * @param _duration duration in seconds of the period in which the tokens will vest
@@ -91,16 +91,13 @@ contract LinearTokenVesting is Ownable {
 
         // BK Ok
         uint256 unreleased = releasableAmount();
-
         // BK Ok
         require(unreleased > 0);
 
         // BK Ok
         released = released.add(unreleased);
-
         // BK Ok
         token.safeTransfer(beneficiary, unreleased);
-
         // BK Ok - Log event
         Released(unreleased);
     }

@@ -8,8 +8,9 @@ Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum crow
 
 This audit has been conducted on Akropolis' source code in commits
 [7a929f9](https://github.com/akropolisio/akropolis-sale/commit/7a929f9124be8010f8561be7483332c5344beb1a),
-[ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f) and
-[74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad).
+[ef14193](https://github.com/akropolisio/akropolis-sale/commit/ef14193b258cd8ecd11b3836f318ca3b58dcf57f),
+[74a9888](https://github.com/akropolisio/akropolis-sale/commit/74a98886f76297d020d63467d6015d844ee52aad) and
+[0b49aec](https://github.com/akropolisio/akropolis-sale/commit/0b49aecd1feeab67dce8de1fc9fd31f24c405eea).
 
 No potential vulnerabilities have been identified in the crowdsale, whitelist, allocation, vesting and token contracts.
 
@@ -260,4 +261,4 @@ From https://github.com/OpenZeppelin/zeppelin-solidity/tree/v1.5.0, as advised b
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - Mar 25 2018. The MIT Licence.
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Akropolis - May 30 2018. The MIT Licence.

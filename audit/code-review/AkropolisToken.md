@@ -29,9 +29,9 @@ contract AkropolisToken is MintableToken, PausableToken {
     uint8 public constant decimals = 18;
 
     // BK Ok
-    string public constant symbol = "AET";
+    string public constant symbol = "AKT";
 
     // BK Ok
-    string public constant version = "AET 1.0";
+    string public constant version = "AKT 1.0";
 }
 ```
