@@ -26,8 +26,8 @@ contract SaleConfiguration {
     // BK Ok
     uint256 public constant DECIMALS_FACTOR = 10**uint256(DECIMALS);
 
-    //Disclaimer: This file is subject to change prior to the ICO. 
-    //It will be updated with values just before Crowdsale goes live
+    //Disclaimer: This file is subject to change prior to the token generation. 
+    //It will be updated with values just before going live
 
     // BK Next 3 Ok
     uint256 public constant AKT_RATE = 10000;
@@ -37,8 +37,8 @@ contract SaleConfiguration {
     // BK Next 5 Ok
     uint256 public constant TOTAL_SUPPLY = DECIMALS_FACTOR * 900000000;
     uint256 public constant PUBLIC_SALE_SUPPLY = DECIMALS_FACTOR * 180000000;
-    uint256 public constant PRESALE_SUPPLY = DECIMALS_FACTOR * 180000000;
-    uint256 public constant TEAM_SUPPLY = DECIMALS_FACTOR * 180000000;
+    uint256 public constant PRESALE_SUPPLY = DECIMALS_FACTOR * 306000000;
+    uint256 public constant TEAM_SUPPLY = DECIMALS_FACTOR * 54000000;
     uint256 public constant ADVISORS_SUPPLY = DECIMALS_FACTOR * 90000000;
 
     // BK Next 2 Ok

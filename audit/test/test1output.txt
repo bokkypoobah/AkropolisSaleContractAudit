@@ -12,10 +12,10 @@ DEPLOYMENTDATA     = 'deploymentData.txt'
 INCLUDEJS          = './include.js'
 TEST1OUTPUT        = 'test1output.txt'
 TEST1RESULTS       = 'test1results.txt'
-CURRENTTIME        = '1527607968' 'Tue 29 May 2018 15:32:48 UTC'
-START_DATE         = '1527607998' 'Tue 29 May 2018 15:33:18 UTC'
-END_DATE           = '1527608058' 'Tue 29 May 2018 15:34:18 UTC'
-REFUND_END_DATE    = '1527608088' 'Tue 29 May 2018 15:34:48 UTC'
+CURRENTTIME        = '1528138506' 'Mon  4 Jun 2018 18:55:06 UTC'
+START_DATE         = '1528138536' 'Mon  4 Jun 2018 18:55:36 UTC'
+END_DATE           = '1528138596' 'Mon  4 Jun 2018 18:56:36 UTC'
+REFUND_END_DATE    = '1528138626' 'Mon  4 Jun 2018 18:57:06 UTC'
 --- Differences ../../contracts/Administrable.sol Administrable.sol ---
 3,6c3,6
 < import "zeppelin-solidity/contracts/crowdsale/CappedCrowdsale.sol";
@@ -108,7 +108,7 @@ Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.8.6-stable-12683fec/darwin-amd64/go1.10
 coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
-at block: 7 (Wed, 30 May 2018 01:32:51 AEST)
+at block: 5 (Tue, 05 Jun 2018 04:55:08 AEST)
  datadir: /Users/bok/Projects/AkropolisSaleContractAudit/audit/test/testchain
  modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 shh:1.0 txpool:1.0 web3:1.0
 
@@ -272,8 +272,8 @@ DATA: teamAllocationAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 DATA: advisorAllocationAddress=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.010884864000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.010884864000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.010991982000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.010991982000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -305,13 +305,13 @@ RESULT: PASS Deploy Allocation Contracts - Team Allocation Manager
 RESULT: PASS Deploy Allocation Contracts - Advisor Allocation Manager
 1
 > 
-RESULT: presaleAllocationAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 status=0x1 Success gas=6000000 gasUsed=1814144 costETH=0.003628288 costUSD=2.2185166976 @ ETH/USD=611.45 gasPrice=2 gwei block=23 txIx=0 txId=0x74bdf1b926671642911c3aa0baf6a8e1046184e3430203f890ec5287dc9eabcb @ 1527607987 Tue, 29 May 2018 15:33:07 UTC
+RESULT: presaleAllocationAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 status=0x1 Success gas=6000000 gasUsed=1831997 costETH=0.003663994 costUSD=2.2403491313 @ ETH/USD=611.45 gasPrice=2 gwei block=16 txIx=0 txId=0x59a8de11ce80b9ab69b9893f1661550258e65381b02df07222ea78417d44bf90 @ 1528138519 Mon, 04 Jun 2018 18:55:19 UTC
 undefined
 > 
-RESULT: teamAllocationAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d status=0x1 Success gas=6000000 gasUsed=1814144 costETH=0.003628288 costUSD=2.2185166976 @ ETH/USD=611.45 gasPrice=2 gwei block=24 txIx=0 txId=0xcb26e4ae90e920b7df297f807392643192a4b59f3cca29c242ea17c9eb800fd4 @ 1527607988 Tue, 29 May 2018 15:33:08 UTC
+RESULT: teamAllocationAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d status=0x1 Success gas=6000000 gasUsed=1831997 costETH=0.003663994 costUSD=2.2403491313 @ ETH/USD=611.45 gasPrice=2 gwei block=17 txIx=0 txId=0x529518511acf400b8e6184ef716eb154475d79789bc1e4f0121a93748db204c0 @ 1528138520 Mon, 04 Jun 2018 18:55:20 UTC
 undefined
 > 
-RESULT: advisorAllocationAddress=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff status=0x1 Success gas=6000000 gasUsed=1814144 costETH=0.003628288 costUSD=2.2185166976 @ ETH/USD=611.45 gasPrice=2 gwei block=25 txIx=0 txId=0xeee1dd9a4a7800416c7f8ba94bbed6d9d80cd78eadcd8901851b7a06d9d3a59a @ 1527607989 Tue, 29 May 2018 15:33:09 UTC
+RESULT: advisorAllocationAddress=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff status=0x1 Success gas=6000000 gasUsed=1831997 costETH=0.003663994 costUSD=2.2403491313 @ ETH/USD=611.45 gasPrice=2 gwei block=18 txIx=0 txId=0x3735c9c5107562386e86c53add41ae95598102addf7ce701fc9a0b60a0e4865e @ 1528138521 Mon, 04 Jun 2018 18:55:21 UTC
 undefined
 > 
 RESULT: presaleAllocation.address=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
@@ -376,8 +376,8 @@ undefined
 DATA: whitelistAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012220202000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012220202000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012319408000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012319408000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -404,7 +404,7 @@ undefined
 RESULT: PASS Deploy Whitelist Contract
 1
 > 
-RESULT: whitelistAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3 status=0x1 Success gas=6000000 gasUsed=667669 costETH=0.001335338 costUSD=0.8164924201 @ ETH/USD=611.45 gasPrice=2 gwei block=28 txIx=0 txId=0xf5ba090558607df068adb6e17afd5e6f721f909047292794c3aa888e38571775 @ 1527607992 Tue, 29 May 2018 15:33:12 UTC
+RESULT: whitelistAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3 status=0x1 Success gas=6000000 gasUsed=663713 costETH=0.001327426 costUSD=0.8116546277 @ ETH/USD=611.45 gasPrice=2 gwei block=20 txIx=0 txId=0x1921ffc7ae73d5d0c1b56dd9fdccdf269d8d6673adc10f9016d0fb2666dfbb8b @ 1528138523 Mon, 04 Jun 2018 18:55:23 UTC
 undefined
 > 
 RESULT: whitelistContractAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
@@ -433,8 +433,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012311226000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012311226000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012410432000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012410432000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -461,13 +461,13 @@ undefined
 RESULT: PASS Set Whitelist Admin - ac4 admin
 1
 > 
-RESULT: setWhitelistAdmin_1Tx status=0x1 Success gas=200000 gasUsed=45512 costETH=0.000091024 costUSD=0.0556566248 @ ETH/USD=611.45 gasPrice=2 gwei block=30 txIx=0 txId=0x2f1c0aaea71b077d846bec2767bccd7fa1731ad1548f5b324bb3a2a13d7b8ed5 @ 1527607994 Tue, 29 May 2018 15:33:14 UTC
+RESULT: setWhitelistAdmin_1Tx status=0x1 Success gas=200000 gasUsed=45512 costETH=0.000091024 costUSD=0.0556566248 @ ETH/USD=611.45 gasPrice=2 gwei block=22 txIx=0 txId=0x2f1c0aaea71b077d846bec2767bccd7fa1731ad1548f5b324bb3a2a13d7b8ed5 @ 1528138525 Mon, 04 Jun 2018 18:55:25 UTC
 undefined
 > 
 RESULT: whitelistContractAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: whitelist.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: whitelist.getWhitelistedCount=0
-RESULT: AdminChanged 0 #30 {"newAdmin":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","previousAdmin":"0x0000000000000000000000000000000000000000"}
+RESULT: AdminChanged 0 #22 {"newAdmin":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","previousAdmin":"0x0000000000000000000000000000000000000000"}
 undefined
 > 
 RESULT: 
@@ -495,8 +495,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012884526000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012311226000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.012983732000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012410432000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -529,13 +529,13 @@ RESULT: PASS Whitelist Address - ac6 T2
 RESULT: PASS Whitelist Address - ac7 T3
 1
 > 
-RESULT: whitelistAddress_1Tx status=0x1 Success gas=200000 gasUsed=105550 costETH=0.0002111 costUSD=0.129077095 @ ETH/USD=611.45 gasPrice=2 gwei block=32 txIx=0 txId=0x595323a4957864f6d0ea8f828c9fbe1bc80b7d32cc932afccdef34b8f5893f71 @ 1527607996 Tue, 29 May 2018 15:33:16 UTC
+RESULT: whitelistAddress_1Tx status=0x1 Success gas=200000 gasUsed=105550 costETH=0.0002111 costUSD=0.129077095 @ ETH/USD=611.45 gasPrice=2 gwei block=24 txIx=0 txId=0x595323a4957864f6d0ea8f828c9fbe1bc80b7d32cc932afccdef34b8f5893f71 @ 1528138527 Mon, 04 Jun 2018 18:55:27 UTC
 undefined
 > 
-RESULT: whitelistAddress_2Tx status=0x1 Success gas=200000 gasUsed=90550 costETH=0.0001811 costUSD=0.110733595 @ ETH/USD=611.45 gasPrice=2 gwei block=32 txIx=1 txId=0xeb14a987c642145b3f928f5e9d268a77fb2035282237d187248572abc59bd662 @ 1527607996 Tue, 29 May 2018 15:33:16 UTC
+RESULT: whitelistAddress_2Tx status=0x1 Success gas=200000 gasUsed=90550 costETH=0.0001811 costUSD=0.110733595 @ ETH/USD=611.45 gasPrice=2 gwei block=24 txIx=1 txId=0xeb14a987c642145b3f928f5e9d268a77fb2035282237d187248572abc59bd662 @ 1528138527 Mon, 04 Jun 2018 18:55:27 UTC
 undefined
 > 
-RESULT: whitelistAddress_3Tx status=0x1 Success gas=200000 gasUsed=90550 costETH=0.0001811 costUSD=0.110733595 @ ETH/USD=611.45 gasPrice=2 gwei block=32 txIx=2 txId=0x1c9f51e6b898314b1f36ca860b2470d0e5dcfd9a9c0f2062c1f27e64a9cc7ed4 @ 1527607996 Tue, 29 May 2018 15:33:16 UTC
+RESULT: whitelistAddress_3Tx status=0x1 Success gas=200000 gasUsed=90550 costETH=0.0001811 costUSD=0.110733595 @ ETH/USD=611.45 gasPrice=2 gwei block=24 txIx=2 txId=0x1c9f51e6b898314b1f36ca860b2470d0e5dcfd9a9c0f2062c1f27e64a9cc7ed4 @ 1528138527 Mon, 04 Jun 2018 18:55:27 UTC
 undefined
 > 
 RESULT: whitelistContractAddress=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
@@ -632,8 +632,8 @@ undefined
 DATA: configAddress=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.013383356000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012810056000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.013518010000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.012944710000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -661,7 +661,7 @@ undefined
 RESULT: PASS Deploy Config Contract
 1
 > 
-RESULT: configAddress=0x57930444aa5c1e758c1407ded001a8f36aa80b1d status=0x1 Success gas=6000000 gasUsed=249415 costETH=0.00049883 costUSD=0.3050096035 @ ETH/USD=611.45 gasPrice=2 gwei block=34 txIx=0 txId=0x7a7e58086b000ca7a9ff97fb0e98cf0a2815bc39bac373e82fa181bbd46a4eb8 @ 1527607998 Tue, 29 May 2018 15:33:18 UTC
+RESULT: configAddress=0x57930444aa5c1e758c1407ded001a8f36aa80b1d status=0x1 Success gas=6000000 gasUsed=267139 costETH=0.000534278 costUSD=0.3266842831 @ ETH/USD=611.45 gasPrice=2 gwei block=26 txIx=0 txId=0xeeb79986b0e63226f18d1717f36612d0a0ebe8b77c77700abce429f959888428 @ 1528138529 Mon, 04 Jun 2018 18:55:29 UTC
 undefined
 > 
 RESULT: configContractAddress=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
@@ -723,8 +723,8 @@ undefined
 DATA: crowdsaleAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.020507392000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019934092000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.020642046000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020068746000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -754,7 +754,7 @@ undefined
 RESULT: PASS Deploy Crowdsale Contract
 1
 > 
-RESULT: crowdsaleAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a status=0x1 Success gas=6000000 gasUsed=3562018 costETH=0.007124036 costUSD=4.3559918122 @ ETH/USD=611.45 gasPrice=2 gwei block=36 txIx=0 txId=0x30cf36f79073ced07c7a20e74141b417963384bf861c2e149d83cd9ec221a010 @ 1527608000 Tue, 29 May 2018 15:33:20 UTC
+RESULT: crowdsaleAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a status=0x1 Success gas=6000000 gasUsed=3562018 costETH=0.007124036 costUSD=4.3559918122 @ ETH/USD=611.45 gasPrice=2 gwei block=28 txIx=0 txId=0xdd3cedf65d73c4c00632624c2ef9850f04381f52e2ebd41c10dca3883a955afb @ 1528138531 Mon, 04 Jun 2018 18:55:31 UTC
 undefined
 > 
 RESULT: crowdsaleContractAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
@@ -774,10 +774,10 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
 undefined
 > 
@@ -789,7 +789,7 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=0
 RESULT: token.mintingFinished=false
 RESULT: token.paused=true
-RESULT: Pause 0 #36 {}
+RESULT: Pause 0 #28 {}
 undefined
 > 
 RESULT: 
@@ -797,8 +797,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'startTime' at 1527608008+0s=Wed, 30 May 2018 01:33:29 AEST now=Wed, 30 May 2018 01:33:23 AEST
-RESULT: Waited until 'startTime' at at 1527608008+0s=Wed, 30 May 2018 01:33:29 AEST now=Wed, 30 May 2018 01:33:29 AEST
+RESULT: Waiting until 'startTime' at 1528138539+0s=Tue, 05 Jun 2018 04:55:40 AEST now=Tue, 05 Jun 2018 04:55:33 AEST
+RESULT: Waited until 'startTime' at at 1528138539+0s=Tue, 05 Jun 2018 04:55:40 AEST now=Tue, 05 Jun 2018 04:55:40 AEST
 RESULT: 
 undefined
 > 
@@ -824,8 +824,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.020980930000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019934092000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021115584000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020068746000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        3.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -861,13 +861,13 @@ RESULT: PASS Send Contribution #0 - First Round - ac6 3 ETH - Expecting failure 
 RESULT: PASS Send Contribution #0 - First Round - ac7 3 ETH - Expecting failure - wrong round
 1
 > 
-RESULT: sendContribution0_1Tx status=0x1 Success gas=400000 gasUsed=161263 costETH=0.000322526 costUSD=0.1972085227 @ ETH/USD=611.45 gasPrice=2 gwei block=47 txIx=0 txId=0xdc6f297fe8033659ecdc39ed222e2822ebf854a4c4aa90074f22c2d9c43da056 @ 1527608011 Tue, 29 May 2018 15:33:31 UTC
+RESULT: sendContribution0_1Tx status=0x1 Success gas=400000 gasUsed=161263 costETH=0.000322526 costUSD=0.1972085227 @ ETH/USD=611.45 gasPrice=2 gwei block=39 txIx=2 txId=0xdc6f297fe8033659ecdc39ed222e2822ebf854a4c4aa90074f22c2d9c43da056 @ 1528138542 Mon, 04 Jun 2018 18:55:42 UTC
 undefined
 > 
-RESULT: sendContribution0_2Tx status=0x0 Failure gas=400000 gasUsed=37753 costETH=0.000075506 costUSD=0.0461681437 @ ETH/USD=611.45 gasPrice=2 gwei block=47 txIx=2 txId=0xe8ff03fa4d7aea08e2e172554e978e77f0d08ce770f3b0135072fb361d7be829 @ 1527608011 Tue, 29 May 2018 15:33:31 UTC
+RESULT: sendContribution0_2Tx status=0x0 Failure gas=400000 gasUsed=37753 costETH=0.000075506 costUSD=0.0461681437 @ ETH/USD=611.45 gasPrice=2 gwei block=39 txIx=1 txId=0xe8ff03fa4d7aea08e2e172554e978e77f0d08ce770f3b0135072fb361d7be829 @ 1528138542 Mon, 04 Jun 2018 18:55:42 UTC
 undefined
 > 
-RESULT: sendContribution0_3Tx status=0x0 Failure gas=400000 gasUsed=37753 costETH=0.000075506 costUSD=0.0461681437 @ ETH/USD=611.45 gasPrice=2 gwei block=47 txIx=1 txId=0x387c3d761854d32e4efbea2d4b812b6a2471f6fe8d355f527075268a1346ac16 @ 1527608011 Tue, 29 May 2018 15:33:31 UTC
+RESULT: sendContribution0_3Tx status=0x0 Failure gas=400000 gasUsed=37753 costETH=0.000075506 costUSD=0.0461681437 @ ETH/USD=611.45 gasPrice=2 gwei block=39 txIx=0 txId=0x387c3d761854d32e4efbea2d4b812b6a2471f6fe8d355f527075268a1346ac16 @ 1528138542 Mon, 04 Jun 2018 18:55:42 UTC
 undefined
 > 
 RESULT: crowdsaleContractAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
@@ -887,10 +887,10 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
 undefined
 > 
@@ -902,8 +902,8 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=30000
 RESULT: token.mintingFinished=false
 RESULT: token.paused=true
-RESULT: Mint 0 #47 {"amount":"3e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
-RESULT: Transfer 0 #47: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=30000
+RESULT: Mint 0 #39 {"amount":"3e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
+RESULT: Transfer 0 #39: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=30000
 undefined
 > 
 RESULT: 
@@ -911,8 +911,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'startTime+10s' at 1527608008+10s=Wed, 30 May 2018 01:33:39 AEST now=Wed, 30 May 2018 01:33:34 AEST
-RESULT: Waited until 'startTime+10s' at at 1527608008+10s=Wed, 30 May 2018 01:33:39 AEST now=Wed, 30 May 2018 01:33:39 AEST
+RESULT: Waiting until 'startTime+10s' at 1528138539+10s=Tue, 05 Jun 2018 04:55:50 AEST now=Tue, 05 Jun 2018 04:55:44 AEST
+RESULT: Waited until 'startTime+10s' at at 1528138539+10s=Tue, 05 Jun 2018 04:55:50 AEST now=Tue, 05 Jun 2018 04:55:50 AEST
 RESULT: 
 undefined
 > 
@@ -938,8 +938,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021461608000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019934092000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021596262000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020068746000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        7.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -975,13 +975,13 @@ RESULT: PASS Send Contribution #1 - Next Round - ac6 2 ETH
 RESULT: PASS Send Contribution #1 - Next Round - ac7 2 ETH - Expecting failure - wrong round
 1
 > 
-RESULT: sendContribution1_1Tx status=0x1 Success gas=400000 gasUsed=86283 costETH=0.000172566 costUSD=0.1055154807 @ ETH/USD=611.45 gasPrice=2 gwei block=57 txIx=1 txId=0xe4f9d9c60cb5cb4d45b429d1b5b98cce3070dd81ef0f599ad83713d47a00a9db @ 1527608021 Tue, 29 May 2018 15:33:41 UTC
+RESULT: sendContribution1_1Tx status=0x1 Success gas=400000 gasUsed=86283 costETH=0.000172566 costUSD=0.1055154807 @ ETH/USD=611.45 gasPrice=2 gwei block=49 txIx=0 txId=0xe4f9d9c60cb5cb4d45b429d1b5b98cce3070dd81ef0f599ad83713d47a00a9db @ 1528138552 Mon, 04 Jun 2018 18:55:52 UTC
 undefined
 > 
-RESULT: sendContribution1_2Tx status=0x1 Success gas=400000 gasUsed=116283 costETH=0.000232566 costUSD=0.1422024807 @ ETH/USD=611.45 gasPrice=2 gwei block=57 txIx=0 txId=0xe1db82451b9dee5430f19e27314017a44a87ffbcd72bb22288d48c3478593712 @ 1527608021 Tue, 29 May 2018 15:33:41 UTC
+RESULT: sendContribution1_2Tx status=0x1 Success gas=400000 gasUsed=116283 costETH=0.000232566 costUSD=0.1422024807 @ ETH/USD=611.45 gasPrice=2 gwei block=49 txIx=2 txId=0xe1db82451b9dee5430f19e27314017a44a87ffbcd72bb22288d48c3478593712 @ 1528138552 Mon, 04 Jun 2018 18:55:52 UTC
 undefined
 > 
-RESULT: sendContribution1_3Tx status=0x0 Failure gas=400000 gasUsed=37773 costETH=0.000075546 costUSD=0.0461926017 @ ETH/USD=611.45 gasPrice=2 gwei block=57 txIx=2 txId=0xbc8d0d14b3f04a6c8c928c6b7e1fd21dd3ea00282abe9556708b2aacd5561105 @ 1527608021 Tue, 29 May 2018 15:33:41 UTC
+RESULT: sendContribution1_3Tx status=0x0 Failure gas=400000 gasUsed=37773 costETH=0.000075546 costUSD=0.0461926017 @ ETH/USD=611.45 gasPrice=2 gwei block=49 txIx=1 txId=0xbc8d0d14b3f04a6c8c928c6b7e1fd21dd3ea00282abe9556708b2aacd5561105 @ 1528138552 Mon, 04 Jun 2018 18:55:52 UTC
 undefined
 > 
 RESULT: crowdsaleContractAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
@@ -1001,10 +1001,10 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
 undefined
 > 
@@ -1016,10 +1016,10 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=70000
 RESULT: token.mintingFinished=false
 RESULT: token.paused=true
-RESULT: Mint 0 #57 {"amount":"2e+22","to":"0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9"}
-RESULT: Mint 1 #57 {"amount":"2e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
-RESULT: Transfer 0 #57: from=0x0000000000000000000000000000000000000000 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=20000
-RESULT: Transfer 1 #57: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=20000
+RESULT: Mint 0 #49 {"amount":"2e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
+RESULT: Mint 1 #49 {"amount":"2e+22","to":"0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9"}
+RESULT: Transfer 0 #49: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=20000
+RESULT: Transfer 1 #49: from=0x0000000000000000000000000000000000000000 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=20000
 undefined
 > 
 RESULT: 
@@ -1027,8 +1027,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'startTime+20s' at 1527608008+20s=Wed, 30 May 2018 01:33:49 AEST now=Wed, 30 May 2018 01:33:45 AEST
-RESULT: Waited until 'startTime+20s' at at 1527608008+20s=Wed, 30 May 2018 01:33:49 AEST now=Wed, 30 May 2018 01:33:49 AEST
+RESULT: Waiting until 'startTime+20s' at 1528138539+20s=Tue, 05 Jun 2018 04:56:00 AEST now=Tue, 05 Jun 2018 04:55:54 AEST
+RESULT: Waited until 'startTime+20s' at at 1528138539+20s=Tue, 05 Jun 2018 04:56:00 AEST now=Tue, 05 Jun 2018 04:56:00 AEST
 RESULT: 
 undefined
 > 
@@ -1054,8 +1054,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.022014490000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.019934092000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.022149144000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020068746000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.000573300000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1091,13 +1091,13 @@ RESULT: PASS Send Contribution #2 - Next Round - ac6 500 ETH
 RESULT: PASS Send Contribution #2 - Next Round - ac7 5488 ETH
 1
 > 
-RESULT: sendContribution2_1Tx status=0x1 Success gas=400000 gasUsed=82147 costETH=0.000164294 costUSD=0.1004575663 @ ETH/USD=611.45 gasPrice=2 gwei block=67 txIx=2 txId=0x2600fe9448221258847b3dcd32e1f99abc9d119fb27e21cc0ee8520148d4ec2b @ 1527608031 Tue, 29 May 2018 15:33:51 UTC
+RESULT: sendContribution2_1Tx status=0x1 Success gas=400000 gasUsed=82147 costETH=0.000164294 costUSD=0.1004575663 @ ETH/USD=611.45 gasPrice=2 gwei block=59 txIx=0 txId=0x2600fe9448221258847b3dcd32e1f99abc9d119fb27e21cc0ee8520148d4ec2b @ 1528138562 Mon, 04 Jun 2018 18:56:02 UTC
 undefined
 > 
-RESULT: sendContribution2_2Tx status=0x1 Success gas=400000 gasUsed=82147 costETH=0.000164294 costUSD=0.1004575663 @ ETH/USD=611.45 gasPrice=2 gwei block=67 txIx=1 txId=0x95484e80d30c8d552900b6585f5bafa486bde44e3c534118fa1a8effb2848223 @ 1527608031 Tue, 29 May 2018 15:33:51 UTC
+RESULT: sendContribution2_2Tx status=0x1 Success gas=400000 gasUsed=82147 costETH=0.000164294 costUSD=0.1004575663 @ ETH/USD=611.45 gasPrice=2 gwei block=59 txIx=2 txId=0x95484e80d30c8d552900b6585f5bafa486bde44e3c534118fa1a8effb2848223 @ 1528138562 Mon, 04 Jun 2018 18:56:02 UTC
 undefined
 > 
-RESULT: sendContribution2_3Tx status=0x1 Success gas=400000 gasUsed=112147 costETH=0.000224294 costUSD=0.1371445663 @ ETH/USD=611.45 gasPrice=2 gwei block=67 txIx=0 txId=0xab786575cde20006c884210c8dd53aadd2a98474f277124800043713da0b219e @ 1527608031 Tue, 29 May 2018 15:33:51 UTC
+RESULT: sendContribution2_3Tx status=0x1 Success gas=400000 gasUsed=112147 costETH=0.000224294 costUSD=0.1371445663 @ ETH/USD=611.45 gasPrice=2 gwei block=59 txIx=1 txId=0xab786575cde20006c884210c8dd53aadd2a98474f277124800043713da0b219e @ 1528138562 Mon, 04 Jun 2018 18:56:02 UTC
 undefined
 > 
 RESULT: crowdsaleContractAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
@@ -1117,10 +1117,10 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
 undefined
 > 
@@ -1132,12 +1132,12 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=60000000
 RESULT: token.mintingFinished=false
 RESULT: token.paused=true
-RESULT: Mint 0 #67 {"amount":"5.488e+25","to":"0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec"}
-RESULT: Mint 1 #67 {"amount":"5e+24","to":"0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9"}
-RESULT: Mint 2 #67 {"amount":"5e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
-RESULT: Transfer 0 #67: from=0x0000000000000000000000000000000000000000 to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=54880000
-RESULT: Transfer 1 #67: from=0x0000000000000000000000000000000000000000 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=5000000
-RESULT: Transfer 2 #67: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=50000
+RESULT: Mint 0 #59 {"amount":"5e+22","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
+RESULT: Mint 1 #59 {"amount":"5.488e+25","to":"0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec"}
+RESULT: Mint 2 #59 {"amount":"5e+24","to":"0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9"}
+RESULT: Transfer 0 #59: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=50000
+RESULT: Transfer 1 #59: from=0x0000000000000000000000000000000000000000 to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=54880000
+RESULT: Transfer 2 #59: from=0x0000000000000000000000000000000000000000 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=5000000
 undefined
 > 
 RESULT: 
@@ -1180,8 +1180,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.023610208000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020472106000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.023744862000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.020606760000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1235,31 +1235,31 @@ RESULT: PASS Setup Allocation - teamAllocation.registerAllocation(team2, value=2
 RESULT: PASS Setup Allocation - teamAllocation.registerAllocation(team3, value=300, vestingValue=250, cliff=60, vesting=240)
 1
 > 
-RESULT: setupAllocationAddress_1Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=72 txIx=0 txId=0x6589d7c5a34028dd2c3a7f2535ca580b550c6681574f40cae05b690d27cdad1a @ 1527608036 Tue, 29 May 2018 15:33:56 UTC
+RESULT: setupAllocationAddress_1Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=0 txId=0x6589d7c5a34028dd2c3a7f2535ca580b550c6681574f40cae05b690d27cdad1a @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_2Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=73 txIx=0 txId=0x753fe3c72df7facb29a4184721f1a6290f569c47a5e1140ad657808bde8d3ac2 @ 1527608037 Tue, 29 May 2018 15:33:57 UTC
+RESULT: setupAllocationAddress_2Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=1 txId=0x753fe3c72df7facb29a4184721f1a6290f569c47a5e1140ad657808bde8d3ac2 @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_3Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=73 txIx=1 txId=0x42973247020dd790c8c3d9c7eefb0d42d0bbca9102cb8fcc66fad07d8a0bb6fe @ 1527608037 Tue, 29 May 2018 15:33:57 UTC
+RESULT: setupAllocationAddress_3Tx status=0x1 Success gas=200000 gasUsed=45842 costETH=0.000091684 costUSD=0.0560601818 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=2 txId=0x42973247020dd790c8c3d9c7eefb0d42d0bbca9102cb8fcc66fad07d8a0bb6fe @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_4Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=73 txIx=2 txId=0x527094381a4e635f6986a771cceed095646a5a88f365c8d8b561cef3916db91a @ 1527608037 Tue, 29 May 2018 15:33:57 UTC
+RESULT: setupAllocationAddress_4Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=3 txId=0x527094381a4e635f6986a771cceed095646a5a88f365c8d8b561cef3916db91a @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_5Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=73 txIx=3 txId=0x8364454f4caa60ea754811dfddadc5d7112ab3278d5cbc499f235a1d93572133 @ 1527608037 Tue, 29 May 2018 15:33:57 UTC
+RESULT: setupAllocationAddress_5Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=4 txId=0x8364454f4caa60ea754811dfddadc5d7112ab3278d5cbc499f235a1d93572133 @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_6Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=73 txIx=4 txId=0xaa53b1c2ec4fefe8fbd1b8a894c58a5bde358e823a54ebe526fd91d763678551 @ 1527608037 Tue, 29 May 2018 15:33:57 UTC
+RESULT: setupAllocationAddress_6Tx status=0x1 Success gas=200000 gasUsed=43827 costETH=0.000087654 costUSD=0.0535960383 @ ETH/USD=611.45 gasPrice=2 gwei block=63 txIx=5 txId=0xaa53b1c2ec4fefe8fbd1b8a894c58a5bde358e823a54ebe526fd91d763678551 @ 1528138566 Mon, 04 Jun 2018 18:56:06 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_7Tx status=0x1 Success gas=200000 gasUsed=186284 costETH=0.000372568 costUSD=0.2278067036 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=0 txId=0x558e930f6a63418f7a19644b4de724d1ea90b759acb9285229ed706d6589a529 @ 1527608039 Tue, 29 May 2018 15:33:59 UTC
+RESULT: setupAllocationAddress_7Tx status=0x1 Success gas=200000 gasUsed=186284 costETH=0.000372568 costUSD=0.2278067036 @ ETH/USD=611.45 gasPrice=2 gwei block=65 txIx=0 txId=0x558e930f6a63418f7a19644b4de724d1ea90b759acb9285229ed706d6589a529 @ 1528138568 Mon, 04 Jun 2018 18:56:08 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_8Tx status=0x1 Success gas=200000 gasUsed=171284 costETH=0.000342568 costUSD=0.2094632036 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=1 txId=0x590e6e8538c02ee9df733794f9b7087a34fa658524af6436fd61cb1ed7163c57 @ 1527608039 Tue, 29 May 2018 15:33:59 UTC
+RESULT: setupAllocationAddress_8Tx status=0x1 Success gas=200000 gasUsed=171284 costETH=0.000342568 costUSD=0.2094632036 @ ETH/USD=611.45 gasPrice=2 gwei block=65 txIx=1 txId=0x590e6e8538c02ee9df733794f9b7087a34fa658524af6436fd61cb1ed7163c57 @ 1528138568 Mon, 04 Jun 2018 18:56:08 UTC
 undefined
 > 
-RESULT: setupAllocationAddress_9Tx status=0x1 Success gas=200000 gasUsed=171284 costETH=0.000342568 costUSD=0.2094632036 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=2 txId=0x6b3cd18c6b65ff814a868daa0a13789f90b6687935121a3732980941726f633f @ 1527608039 Tue, 29 May 2018 15:33:59 UTC
+RESULT: setupAllocationAddress_9Tx status=0x1 Success gas=200000 gasUsed=171284 costETH=0.000342568 costUSD=0.2094632036 @ ETH/USD=611.45 gasPrice=2 gwei block=65 txIx=2 txId=0x6b3cd18c6b65ff814a868daa0a13789f90b6687935121a3732980941726f633f @ 1528138568 Mon, 04 Jun 2018 18:56:08 UTC
 undefined
 > 
 RESULT: presaleAllocation.address=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
@@ -1277,9 +1277,9 @@ RESULT: teamAllocation.getAllocationsCount=3
 RESULT: teamAllocation.allocations(0)=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756, 0,100000000000000000000,50000000000000000000,1,60,0x0000000000000000000000000000000000000000,0
 RESULT: teamAllocation.allocations(1)=0xabba43e7594e3b76afb157989e93c6621497fd4b, 1,200000000000000000000,150000000000000000000,60,240,0x0000000000000000000000000000000000000000,0
 RESULT: teamAllocation.allocations(2)=0xacca534c9f62ab495bd986e002ddf0f054caae4f, 2,300000000000000000000,250000000000000000000,60,240,0x0000000000000000000000000000000000000000,0
-RESULT: AllocationRegistered(team) 0 #75 {"cliff":"1","investor":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756","value":"100000000000000000000","vestingPeriod":"60","vestingValue":"50000000000000000000"}
-RESULT: AllocationRegistered(team) 1 #75 {"cliff":"60","investor":"0xabba43e7594e3b76afb157989e93c6621497fd4b","value":"200000000000000000000","vestingPeriod":"240","vestingValue":"150000000000000000000"}
-RESULT: AllocationRegistered(team) 2 #75 {"cliff":"60","investor":"0xacca534c9f62ab495bd986e002ddf0f054caae4f","value":"300000000000000000000","vestingPeriod":"240","vestingValue":"250000000000000000000"}
+RESULT: AllocationRegistered(team) 0 #65 {"cliff":"1","investor":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756","value":"100000000000000000000","vestingPeriod":"60","vestingValue":"50000000000000000000"}
+RESULT: AllocationRegistered(team) 1 #65 {"cliff":"60","investor":"0xabba43e7594e3b76afb157989e93c6621497fd4b","value":"200000000000000000000","vestingPeriod":"240","vestingValue":"150000000000000000000"}
+RESULT: AllocationRegistered(team) 2 #65 {"cliff":"60","investor":"0xacca534c9f62ab495bd986e002ddf0f054caae4f","value":"300000000000000000000","vestingPeriod":"240","vestingValue":"250000000000000000000"}
 undefined
 > 
 RESULT: advisorAllocation.address=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff
@@ -1323,8 +1323,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024559800000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.021421698000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.024694454000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.021556352000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1338,8 +1338,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   180000000.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    54000000.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -1369,22 +1369,22 @@ RESULT: PASS Finalise - setDevelopmentFund
 RESULT: PASS Finalise - Finalise
 1
 > 
-RESULT: finalise_1Tx status=0x1 Success gas=500000 gasUsed=43729 costETH=0.000087458 costUSD=0.0534761941 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=0 txId=0x5d2015b89aff08fdf050f58ff848c2f215168d7287fc5cf53288ac53c9b99c45 @ 1527608044 Tue, 29 May 2018 15:34:04 UTC
+RESULT: finalise_1Tx status=0x1 Success gas=500000 gasUsed=43729 costETH=0.000087458 costUSD=0.0534761941 @ ETH/USD=611.45 gasPrice=2 gwei block=68 txIx=0 txId=0x5d2015b89aff08fdf050f58ff848c2f215168d7287fc5cf53288ac53c9b99c45 @ 1528138571 Mon, 04 Jun 2018 18:56:11 UTC
 undefined
 > 
-RESULT: finalise_2Tx status=0x1 Success gas=500000 gasUsed=43817 costETH=0.000087634 costUSD=0.0535838093 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=1 txId=0x0f7b13085c780708e9692dd431f132d9d3eb4d2355cebacf02630f7cc96b3aa9 @ 1527608044 Tue, 29 May 2018 15:34:04 UTC
+RESULT: finalise_2Tx status=0x1 Success gas=500000 gasUsed=43817 costETH=0.000087634 costUSD=0.0535838093 @ ETH/USD=611.45 gasPrice=2 gwei block=69 txIx=0 txId=0x0f7b13085c780708e9692dd431f132d9d3eb4d2355cebacf02630f7cc96b3aa9 @ 1528138572 Mon, 04 Jun 2018 18:56:12 UTC
 undefined
 > 
-RESULT: finalise_3Tx status=0x1 Success gas=500000 gasUsed=44235 costETH=0.00008847 costUSD=0.0540949815 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=2 txId=0x5ae090fbbca12d18be16232c9b7a5ff3510e46555433b454162048ac9af695f2 @ 1527608044 Tue, 29 May 2018 15:34:04 UTC
+RESULT: finalise_3Tx status=0x1 Success gas=500000 gasUsed=44235 costETH=0.00008847 costUSD=0.0540949815 @ ETH/USD=611.45 gasPrice=2 gwei block=69 txIx=1 txId=0x5ae090fbbca12d18be16232c9b7a5ff3510e46555433b454162048ac9af695f2 @ 1528138572 Mon, 04 Jun 2018 18:56:12 UTC
 undefined
 > 
-RESULT: finalise_4Tx status=0x1 Success gas=500000 gasUsed=44413 costETH=0.000088826 costUSD=0.0543126577 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=3 txId=0x8179c68b1d083273c165147d7b546b5af219d4cdefedff2d74030eb3071c2ae3 @ 1527608044 Tue, 29 May 2018 15:34:04 UTC
+RESULT: finalise_4Tx status=0x1 Success gas=500000 gasUsed=44413 costETH=0.000088826 costUSD=0.0543126577 @ ETH/USD=611.45 gasPrice=2 gwei block=69 txIx=2 txId=0x8179c68b1d083273c165147d7b546b5af219d4cdefedff2d74030eb3071c2ae3 @ 1528138572 Mon, 04 Jun 2018 18:56:12 UTC
 undefined
 > 
-RESULT: finalise_5Tx status=0x1 Success gas=500000 gasUsed=43773 costETH=0.000087546 costUSD=0.0535300017 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=4 txId=0x27063324c82ce6094e27e8ee20d5f36f48c1e07c8a771c8783bfd34b15332d5c @ 1527608044 Tue, 29 May 2018 15:34:04 UTC
+RESULT: finalise_5Tx status=0x1 Success gas=500000 gasUsed=43773 costETH=0.000087546 costUSD=0.0535300017 @ ETH/USD=611.45 gasPrice=2 gwei block=69 txIx=3 txId=0x27063324c82ce6094e27e8ee20d5f36f48c1e07c8a771c8783bfd34b15332d5c @ 1528138572 Mon, 04 Jun 2018 18:56:12 UTC
 undefined
 > 
-RESULT: finalise_6Tx status=0x1 Success gas=500000 gasUsed=254829 costETH=0.000509658 costUSD=0.3116303841 @ ETH/USD=611.45 gasPrice=2 gwei block=82 txIx=0 txId=0xafac896fc7e70e525c6934f0932e5c2c798edcedaf6e5e5eec330b24ecb29b08 @ 1527608046 Tue, 29 May 2018 15:34:06 UTC
+RESULT: finalise_6Tx status=0x1 Success gas=500000 gasUsed=254829 costETH=0.000509658 costUSD=0.3116303841 @ ETH/USD=611.45 gasPrice=2 gwei block=71 txIx=0 txId=0xafac896fc7e70e525c6934f0932e5c2c798edcedaf6e5e5eec330b24ecb29b08 @ 1528138574 Mon, 04 Jun 2018 18:56:14 UTC
 undefined
 > 
 RESULT: crowdsaleContractAddress=0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a
@@ -1404,12 +1404,12 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
-RESULT: Finalized 0 #82 {}
+RESULT: Finalized 0 #71 {}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -1420,21 +1420,21 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: OwnershipTransferred 0 #82 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a"}
-RESULT: Mint 0 #82 {"amount":"1.8e+26","to":"0x90d8927407c79c4a28ee879b821c76fc9bcc2688"}
-RESULT: Mint 1 #82 {"amount":"1.8e+26","to":"0x0e946b999033257976aa5cbe0e3530618ca1582d"}
-RESULT: Mint 2 #82 {"amount":"9e+25","to":"0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff"}
-RESULT: Mint 3 #82 {"amount":"1.8e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
-RESULT: Mint 4 #82 {"amount":"9e+25","to":"0xaeea63b5479b50f79583ec49dacdcf86ddeff392"}
-RESULT: Mint 5 #82 {"amount":"1.2e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
-RESULT: MintFinished 0 #82 {}
-RESULT: Unpause 0 #82 {}
-RESULT: Transfer 0 #82: from=0x0000000000000000000000000000000000000000 to=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 value=180000000
-RESULT: Transfer 1 #82: from=0x0000000000000000000000000000000000000000 to=0x0e946b999033257976aa5cbe0e3530618ca1582d value=180000000
-RESULT: Transfer 2 #82: from=0x0000000000000000000000000000000000000000 to=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff value=90000000
-RESULT: Transfer 3 #82: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=180000000
-RESULT: Transfer 4 #82: from=0x0000000000000000000000000000000000000000 to=0xaeea63b5479b50f79583ec49dacdcf86ddeff392 value=90000000
-RESULT: Transfer 5 #82: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=120000000
+RESULT: OwnershipTransferred 0 #71 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a"}
+RESULT: Mint 0 #71 {"amount":"3.06e+26","to":"0x90d8927407c79c4a28ee879b821c76fc9bcc2688"}
+RESULT: Mint 1 #71 {"amount":"5.4e+25","to":"0x0e946b999033257976aa5cbe0e3530618ca1582d"}
+RESULT: Mint 2 #71 {"amount":"9e+25","to":"0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff"}
+RESULT: Mint 3 #71 {"amount":"1.8e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+RESULT: Mint 4 #71 {"amount":"9e+25","to":"0xaeea63b5479b50f79583ec49dacdcf86ddeff392"}
+RESULT: Mint 5 #71 {"amount":"1.2e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+RESULT: MintFinished 0 #71 {}
+RESULT: Unpause 0 #71 {}
+RESULT: Transfer 0 #71: from=0x0000000000000000000000000000000000000000 to=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 value=306000000
+RESULT: Transfer 1 #71: from=0x0000000000000000000000000000000000000000 to=0x0e946b999033257976aa5cbe0e3530618ca1582d value=54000000
+RESULT: Transfer 2 #71: from=0x0000000000000000000000000000000000000000 to=0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff value=90000000
+RESULT: Transfer 3 #71: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=180000000
+RESULT: Transfer 4 #71: from=0x0000000000000000000000000000000000000000 to=0xaeea63b5479b50f79583ec49dacdcf86ddeff392 value=90000000
+RESULT: Transfer 5 #71: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=120000000
 undefined
 > 
 RESULT: 
@@ -1462,8 +1462,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.027975318000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028109972000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1477,8 +1477,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -1499,13 +1499,13 @@ RESULT: PASS Distribute Vesting - teamAllocation.distributeAllocation(team2Accou
 RESULT: PASS Distribute Vesting - teamAllocation.distributeAllocation(team3Account)
 1
 > 
-RESULT: distributeVesting_1Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=87 txIx=0 txId=0xbe401198aff5b77cc8b1b07239621c1e850f639301ebc66fdb5bb2554a04c483 @ 1527608051 Tue, 29 May 2018 15:34:11 UTC
+RESULT: distributeVesting_1Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=0 txId=0xbe401198aff5b77cc8b1b07239621c1e850f639301ebc66fdb5bb2554a04c483 @ 1528138578 Mon, 04 Jun 2018 18:56:18 UTC
 undefined
 > 
-RESULT: distributeVesting_2Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=87 txIx=1 txId=0xa4138f476ed379fc40d9431e0ec22a871da02665b1912b7f66a71e0a0d04361a @ 1527608051 Tue, 29 May 2018 15:34:11 UTC
+RESULT: distributeVesting_2Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=1 txId=0xa4138f476ed379fc40d9431e0ec22a871da02665b1912b7f66a71e0a0d04361a @ 1528138578 Mon, 04 Jun 2018 18:56:18 UTC
 undefined
 > 
-RESULT: distributeVesting_3Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=87 txIx=2 txId=0x619b6a263b271e7fb206c0af6b5b2eb94466f171cb3cf35da49ab4d3072e6612 @ 1527608051 Tue, 29 May 2018 15:34:11 UTC
+RESULT: distributeVesting_3Tx status=0x1 Success gas=1000000 gasUsed=569253 costETH=0.001138506 costUSD=0.6961394937 @ ETH/USD=611.45 gasPrice=2 gwei block=75 txIx=2 txId=0x619b6a263b271e7fb206c0af6b5b2eb94466f171cb3cf35da49ab4d3072e6612 @ 1528138578 Mon, 04 Jun 2018 18:56:18 UTC
 undefined
 > 
 RESULT: teamAllocation.address=0x0e946b999033257976aa5cbe0e3530618ca1582d
@@ -1516,9 +1516,9 @@ RESULT: teamAllocation.getAllocationsCount=3
 RESULT: teamAllocation.allocations(0)=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756, 0,100000000000000000000,50000000000000000000,1,60,0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2,1
 RESULT: teamAllocation.allocations(1)=0xabba43e7594e3b76afb157989e93c6621497fd4b, 1,200000000000000000000,150000000000000000000,60,240,0x48c8c674b7a01fbc8ab994da6f4823f72efe896b,1
 RESULT: teamAllocation.allocations(2)=0xacca534c9f62ab495bd986e002ddf0f054caae4f, 2,300000000000000000000,250000000000000000000,60,240,0x001fe77705c56b5798a38b01ad0cef03943321e9,1
-RESULT: AllocationDistributed(team) 0 #87 {"cliff":"1","investor":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756","value":"100000000000000000000","vestingPeriod":"60","vestingValue":"50000000000000000000"}
-RESULT: AllocationDistributed(team) 1 #87 {"cliff":"60","investor":"0xabba43e7594e3b76afb157989e93c6621497fd4b","value":"200000000000000000000","vestingPeriod":"240","vestingValue":"150000000000000000000"}
-RESULT: AllocationDistributed(team) 2 #87 {"cliff":"60","investor":"0xacca534c9f62ab495bd986e002ddf0f054caae4f","value":"300000000000000000000","vestingPeriod":"240","vestingValue":"250000000000000000000"}
+RESULT: AllocationDistributed(team) 0 #75 {"cliff":"1","investor":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756","value":"100000000000000000000","vestingPeriod":"60","vestingValue":"50000000000000000000"}
+RESULT: AllocationDistributed(team) 1 #75 {"cliff":"60","investor":"0xabba43e7594e3b76afb157989e93c6621497fd4b","value":"200000000000000000000","vestingPeriod":"240","vestingValue":"150000000000000000000"}
+RESULT: AllocationDistributed(team) 2 #75 {"cliff":"60","investor":"0xacca534c9f62ab495bd986e002ddf0f054caae4f","value":"300000000000000000000","vestingPeriod":"240","vestingValue":"250000000000000000000"}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -1529,12 +1529,12 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Transfer 0 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=100
-RESULT: Transfer 1 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 value=50
-RESULT: Transfer 2 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xabba43e7594e3b76afb157989e93c6621497fd4b value=200
-RESULT: Transfer 3 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0x48c8c674b7a01fbc8ab994da6f4823f72efe896b value=150
-RESULT: Transfer 4 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xacca534c9f62ab495bd986e002ddf0f054caae4f value=300
-RESULT: Transfer 5 #87: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0x001fe77705c56b5798a38b01ad0cef03943321e9 value=250
+RESULT: Transfer 0 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=100
+RESULT: Transfer 1 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 value=50
+RESULT: Transfer 2 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xabba43e7594e3b76afb157989e93c6621497fd4b value=200
+RESULT: Transfer 3 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0x48c8c674b7a01fbc8ab994da6f4823f72efe896b value=150
+RESULT: Transfer 4 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0xacca534c9f62ab495bd986e002ddf0f054caae4f value=300
+RESULT: Transfer 5 #75: from=0x0e946b999033257976aa5cbe0e3530618ca1582d to=0x001fe77705c56b5798a38b01ad0cef03943321e9 value=250
 undefined
 > 
 RESULT: 
@@ -1565,8 +1565,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028231264000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028365918000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1580,8 +1580,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -1593,13 +1593,13 @@ RESULT: -- ------------------------------------------ --------------------------
 RESULT: 
 undefined
 > 
-RESULT: transfer1_1Tx status=0x1 Success gas=100000 gasUsed=52421 costETH=0.000104842 costUSD=0.0641056409 @ ETH/USD=611.45 gasPrice=2 gwei block=91 txIx=0 txId=0x52401d359a7024001e57cbf933a6c345bbc9c548578640f963b2eac8a86ebb1e @ 1527608055 Tue, 29 May 2018 15:34:15 UTC
+RESULT: transfer1_1Tx status=0x1 Success gas=100000 gasUsed=52421 costETH=0.000104842 costUSD=0.0641056409 @ ETH/USD=611.45 gasPrice=2 gwei block=78 txIx=1 txId=0x52401d359a7024001e57cbf933a6c345bbc9c548578640f963b2eac8a86ebb1e @ 1528138581 Mon, 04 Jun 2018 18:56:21 UTC
 undefined
 > 
-RESULT: transfer1_2Tx status=0x1 Success gas=100000 gasUsed=45789 costETH=0.000091578 costUSD=0.0559953681 @ ETH/USD=611.45 gasPrice=2 gwei block=91 txIx=1 txId=0x13407cf13b5d0ec0d03fc43355b83334bff2e27ca1f163dec4e4ff8173e37903 @ 1527608055 Tue, 29 May 2018 15:34:15 UTC
+RESULT: transfer1_2Tx status=0x1 Success gas=100000 gasUsed=45789 costETH=0.000091578 costUSD=0.0559953681 @ ETH/USD=611.45 gasPrice=2 gwei block=78 txIx=0 txId=0x13407cf13b5d0ec0d03fc43355b83334bff2e27ca1f163dec4e4ff8173e37903 @ 1528138581 Mon, 04 Jun 2018 18:56:21 UTC
 undefined
 > 
-RESULT: transfer1_3Tx status=0x1 Success gas=100000 gasUsed=29763 costETH=0.000059526 costUSD=0.0363971727 @ ETH/USD=611.45 gasPrice=2 gwei block=93 txIx=0 txId=0x007181cbab02c5bc973b05f938275b6e835ae0c0dbecb9b628c8287d4e4618dd @ 1527608057 Tue, 29 May 2018 15:34:17 UTC
+RESULT: transfer1_3Tx status=0x1 Success gas=100000 gasUsed=29763 costETH=0.000059526 costUSD=0.0363971727 @ ETH/USD=611.45 gasPrice=2 gwei block=80 txIx=0 txId=0x007181cbab02c5bc973b05f938275b6e835ae0c0dbecb9b628c8287d4e4618dd @ 1528138583 Mon, 04 Jun 2018 18:56:23 UTC
 undefined
 > 
 RESULT: PASS Move Tokens - transfer 0.000001 tokens ac5 -> ac8. CHECK for movement
@@ -1628,10 +1628,10 @@ RESULT: crowdsale.whitelist=0xe6ada9beed6e24be4c0259383db61b52bfca85f3
 RESULT: crowdsale.config=0x57930444aa5c1e758c1407ded001a8f36aa80b1d
 RESULT: crowdsale.min=0/2/1/0
 RESULT: crowdsale.max=0/10/1000/10000
-RESULT: crowdsale.startTime=1527608008 Tue, 29 May 2018 15:33:28 UTC Wed, 30 May 2018 01:33:28 AEST
-RESULT: crowdsale.round1EndTime=1527608018 Tue, 29 May 2018 15:33:38 UTC Wed, 30 May 2018 01:33:38 AEST
-RESULT: crowdsale.round2EndTime=1527608028 Tue, 29 May 2018 15:33:48 UTC Wed, 30 May 2018 01:33:48 AEST
-RESULT: crowdsale.endTime=1527608038 Tue, 29 May 2018 15:33:58 UTC Wed, 30 May 2018 01:33:58 AEST
+RESULT: crowdsale.startTime=1528138539 Mon, 04 Jun 2018 18:55:39 UTC Tue, 05 Jun 2018 04:55:39 AEST
+RESULT: crowdsale.round1EndTime=1528138549 Mon, 04 Jun 2018 18:55:49 UTC Tue, 05 Jun 2018 04:55:49 AEST
+RESULT: crowdsale.round2EndTime=1528138559 Mon, 04 Jun 2018 18:55:59 UTC Tue, 05 Jun 2018 04:55:59 AEST
+RESULT: crowdsale.endTime=1528138569 Mon, 04 Jun 2018 18:56:09 UTC Tue, 05 Jun 2018 04:56:09 AEST
 RESULT: crowdsale.roundDuration=0
 undefined
 > 
@@ -1643,9 +1643,9 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Approval 0 #91 owner=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 spender=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 value=0.03
-RESULT: Transfer 0 #91: from=0xa55a151eb00fded1634d27d1127b4be4627079ea to=0xa88a05d2b88283ce84c8325760b72a64591279a2 value=0.000001
-RESULT: Transfer 1 #93: from=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=0.03
+RESULT: Approval 0 #78 owner=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 spender=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 value=0.03
+RESULT: Transfer 0 #78: from=0xa55a151eb00fded1634d27d1127b4be4627079ea to=0xa88a05d2b88283ce84c8325760b72a64591279a2 value=0.000001
+RESULT: Transfer 1 #80: from=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=0.03
 undefined
 > 
 RESULT: 
@@ -1683,8 +1683,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028362446000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028497100000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1693,19 +1693,19 @@ RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9     -502.00056394400000000
 RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec    -5488.000375346000000000    54880000.000000000000000000 Account #7 - Whitelisted T3
 RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000001000000000000 Account #8
 RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0       -0.000059526000000000           0.000000000000000000 Account #9
-RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000131182000000000         108.363333333333333333 Account #10 - Team #1
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756       -0.000131182000000000         107.530000000000000000 Account #10 - Team #1
 RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000         200.000000000000000000 Account #11 - Team #2
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
 RESULT: 20 0x936e75a404fc4ea6aba4d9c3b20ea67abab3188a        0.000000000000000000           0.000000000000000000 Crowdsale Contract
 RESULT: 21 0x161447c0b19ee70f1f7163a2a39023a284170a0f        0.000000000000000000           0.000000000000000000 Token 'AKT' 'Akropolis External Token'
-RESULT: 22 0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2        0.000000000000000000          41.666666666666666667 Team #1 Vesting Contract
+RESULT: 22 0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2        0.000000000000000000          42.500000000000000000 Team #1 Vesting Contract
 RESULT: 23 0x48c8c674b7a01fbc8ab994da6f4823f72efe896b        0.000000000000000000         150.000000000000000000 Team #2 Vesting Contract
 RESULT: 24 0x001fe77705c56b5798a38b01ad0cef03943321e9        0.000000000000000000         250.000000000000000000 Team #3 Vesting Contract
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
@@ -1717,7 +1717,7 @@ undefined
 RESULT: PASS Claim Vesting #1 - team1VestingContract.release()
 1
 > 
-RESULT: claimVesting0_1Tx status=0x1 Success gas=1000000 gasUsed=65591 costETH=0.000131182 costUSD=0.0802112339 @ ETH/USD=611.45 gasPrice=2 gwei block=97 txIx=0 txId=0x966dafa5177472b48818bde27655ee83cad1d4c02a033e21c1be673866d576a0 @ 1527608061 Tue, 29 May 2018 15:34:21 UTC
+RESULT: claimVesting0_1Tx status=0x1 Success gas=1000000 gasUsed=65591 costETH=0.000131182 costUSD=0.0802112339 @ ETH/USD=611.45 gasPrice=2 gwei block=84 txIx=0 txId=0x966dafa5177472b48818bde27655ee83cad1d4c02a033e21c1be673866d576a0 @ 1528138587 Mon, 04 Jun 2018 18:56:27 UTC
 undefined
 > 
 RESULT: teamAllocation.address=0x0e946b999033257976aa5cbe0e3530618ca1582d
@@ -1733,11 +1733,11 @@ undefined
 RESULT: vesting.address=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2
 RESULT: vesting.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: vesting.beneficiary=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756
-RESULT: vesting.start=1527608051 Tue, 29 May 2018 15:34:11 UTC Wed, 30 May 2018 01:34:11 AEST
+RESULT: vesting.start=1528138578 Mon, 04 Jun 2018 18:56:18 UTC Tue, 05 Jun 2018 04:56:18 AEST
 RESULT: vesting.cliff=1
 RESULT: vesting.duration=60
-RESULT: OwnershipTransferred 0 #87 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0x0e946b999033257976aa5cbe0e3530618ca1582d"}
-RESULT: Released 0 #97 {"amount":"8333333333333333333"}
+RESULT: OwnershipTransferred 0 #75 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0x0e946b999033257976aa5cbe0e3530618ca1582d"}
+RESULT: Released 0 #84 {"amount":"7500000000000000000"}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -1748,7 +1748,7 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Transfer 0 #97: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=8.333333333333333333
+RESULT: Transfer 0 #84: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=7.5
 undefined
 > 
 RESULT: 
@@ -1756,8 +1756,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'vesting.start+30s' at 1527608051+30s=Wed, 30 May 2018 01:34:42 AEST now=Wed, 30 May 2018 01:34:23 AEST
-RESULT: Waited until 'vesting.start+30s' at at 1527608051+30s=Wed, 30 May 2018 01:34:42 AEST now=Wed, 30 May 2018 01:34:42 AEST
+RESULT: Waiting until 'vesting.start+30s' at 1528138578+30s=Tue, 05 Jun 2018 04:56:49 AEST now=Tue, 05 Jun 2018 04:56:29 AEST
+RESULT: Waited until 'vesting.start+30s' at at 1528138578+30s=Tue, 05 Jun 2018 04:56:49 AEST now=Tue, 05 Jun 2018 04:56:49 AEST
 RESULT: 
 undefined
 > 
@@ -1779,8 +1779,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028463628000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028598282000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1794,8 +1794,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -1813,7 +1813,7 @@ undefined
 RESULT: PASS Claim Vesting #2 - team1VestingContract.release()
 1
 > 
-RESULT: claimVesting1_1Tx status=0x1 Success gas=1000000 gasUsed=50591 costETH=0.000101182 costUSD=0.0618677339 @ ETH/USD=611.45 gasPrice=2 gwei block=120 txIx=0 txId=0x61a0320a0b18f12f235b41df85acba44b4a8b05444cb7529b10c5687f03a85e3 @ 1527608084 Tue, 29 May 2018 15:34:44 UTC
+RESULT: claimVesting1_1Tx status=0x1 Success gas=1000000 gasUsed=50591 costETH=0.000101182 costUSD=0.0618677339 @ ETH/USD=611.45 gasPrice=2 gwei block=108 txIx=0 txId=0x61a0320a0b18f12f235b41df85acba44b4a8b05444cb7529b10c5687f03a85e3 @ 1528138611 Mon, 04 Jun 2018 18:56:51 UTC
 undefined
 > 
 RESULT: teamAllocation.address=0x0e946b999033257976aa5cbe0e3530618ca1582d
@@ -1829,10 +1829,10 @@ undefined
 RESULT: vesting.address=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2
 RESULT: vesting.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: vesting.beneficiary=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756
-RESULT: vesting.start=1527608051 Tue, 29 May 2018 15:34:11 UTC Wed, 30 May 2018 01:34:11 AEST
+RESULT: vesting.start=1528138578 Mon, 04 Jun 2018 18:56:18 UTC Tue, 05 Jun 2018 04:56:18 AEST
 RESULT: vesting.cliff=1
 RESULT: vesting.duration=60
-RESULT: Released 0 #120 {"amount":"19166666666666666667"}
+RESULT: Released 0 #108 {"amount":"20000000000000000000"}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -1843,7 +1843,7 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Transfer 0 #120: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=19.166666666666666667
+RESULT: Transfer 0 #108: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=20
 undefined
 > 
 RESULT: 
@@ -1851,8 +1851,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'vesting.start+45s' at 1527608051+45s=Wed, 30 May 2018 01:34:57 AEST now=Wed, 30 May 2018 01:34:46 AEST
-RESULT: Waited until 'vesting.start+45s' at at 1527608051+45s=Wed, 30 May 2018 01:34:57 AEST now=Wed, 30 May 2018 01:34:57 AEST
+RESULT: Waiting until 'vesting.start+45s' at 1528138578+45s=Tue, 05 Jun 2018 04:57:04 AEST now=Tue, 05 Jun 2018 04:56:53 AEST
+RESULT: Waited until 'vesting.start+45s' at at 1528138578+45s=Tue, 05 Jun 2018 04:57:04 AEST now=Tue, 05 Jun 2018 04:57:04 AEST
 RESULT: 
 undefined
 > 
@@ -1874,8 +1874,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028564810000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028699464000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1889,8 +1889,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -1908,7 +1908,7 @@ undefined
 RESULT: PASS Claim Vesting #3 - team1VestingContract.release()
 1
 > 
-RESULT: claimVesting2_1Tx status=0x1 Success gas=1000000 gasUsed=50591 costETH=0.000101182 costUSD=0.0618677339 @ ETH/USD=611.45 gasPrice=2 gwei block=135 txIx=0 txId=0x97819baaa534fe1e2ddde7db46b1d3ecf6d71254414baf29ec597526b068be92 @ 1527608099 Tue, 29 May 2018 15:34:59 UTC
+RESULT: claimVesting2_1Tx status=0x1 Success gas=1000000 gasUsed=50591 costETH=0.000101182 costUSD=0.0618677339 @ ETH/USD=611.45 gasPrice=2 gwei block=123 txIx=0 txId=0x97819baaa534fe1e2ddde7db46b1d3ecf6d71254414baf29ec597526b068be92 @ 1528138626 Mon, 04 Jun 2018 18:57:06 UTC
 undefined
 > 
 RESULT: teamAllocation.address=0x0e946b999033257976aa5cbe0e3530618ca1582d
@@ -1924,10 +1924,10 @@ undefined
 RESULT: vesting.address=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2
 RESULT: vesting.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: vesting.beneficiary=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756
-RESULT: vesting.start=1527608051 Tue, 29 May 2018 15:34:11 UTC Wed, 30 May 2018 01:34:11 AEST
+RESULT: vesting.start=1528138578 Mon, 04 Jun 2018 18:56:18 UTC Tue, 05 Jun 2018 04:56:18 AEST
 RESULT: vesting.cliff=1
 RESULT: vesting.duration=60
-RESULT: Released 0 #135 {"amount":"12500000000000000000"}
+RESULT: Released 0 #123 {"amount":"12500000000000000000"}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -1938,7 +1938,7 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Transfer 0 #135: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=12.5
+RESULT: Transfer 0 #123: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=12.5
 undefined
 > 
 RESULT: 
@@ -1946,8 +1946,8 @@ undefined
 > 
 > 
 > 
-RESULT: Waiting until 'vesting.start+60s' at 1527608051+60s=Wed, 30 May 2018 01:35:12 AEST now=Wed, 30 May 2018 01:35:01 AEST
-RESULT: Waited until 'vesting.start+60s' at at 1527608051+60s=Wed, 30 May 2018 01:35:12 AEST now=Wed, 30 May 2018 01:35:12 AEST
+RESULT: Waiting until 'vesting.start+60s' at 1528138578+60s=Tue, 05 Jun 2018 04:57:19 AEST now=Tue, 05 Jun 2018 04:57:08 AEST
+RESULT: Waited until 'vesting.start+60s' at at 1528138578+60s=Tue, 05 Jun 2018 04:57:19 AEST now=Tue, 05 Jun 2018 04:57:19 AEST
 RESULT: 
 undefined
 > 
@@ -1969,8 +1969,8 @@ undefined
 > 
 RESULT:  # Account                                             EtherBalanceChange                          Token Name
 RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028634564000000000           0.000000000000000000 Account #0 - Miner
-RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024837216000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.028769218000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.024971870000000000           0.000000000000000000 Account #1 - Contract Owner
 RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976     6000.000000000000000000           0.000000000000000000 Account #2 - Wallet
 RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0       -0.001631004000000000           0.000000000000000000 Account #3 - Admin
 RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Not Whitelisted
@@ -1984,8 +1984,8 @@ RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.00000000000000000
 RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000         300.000000000000000000 Account #12 - Team #3
 RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   300000000.000000000000000000 Account #13 - ReserveFund
 RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000    90000000.000000000000000000 Account #14 - DevelopmentFund
-RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   180000000.000000000000000000 Presale Allocation Manager
-RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000   179998950.000000000000000000 Team Allocation Manager
+RESULT: 15 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000   306000000.000000000000000000 Presale Allocation Manager
+RESULT: 16 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000    53998950.000000000000000000 Team Allocation Manager
 RESULT: 17 0xdf9f36fd5654d92e0844c78d2d2dd562404cd1ff        0.000000000000000000    90000000.000000000000000000 Advisor Allocation Manager
 RESULT: 18 0xe6ada9beed6e24be4c0259383db61b52bfca85f3        0.000000000000000000           0.000000000000000000 Whitelist Contract
 RESULT: 19 0x57930444aa5c1e758c1407ded001a8f36aa80b1d        0.000000000000000000           0.000000000000000000 Config Contract
@@ -2003,7 +2003,7 @@ undefined
 RESULT: PASS Claim Vesting #4 - team1VestingContract.release()
 1
 > 
-RESULT: claimVesting3_1Tx status=0x1 Success gas=1000000 gasUsed=34877 costETH=0.000069754 costUSD=0.0426510833 @ ETH/USD=611.45 gasPrice=2 gwei block=150 txIx=0 txId=0xbfbc74f656f15f5205890cb089967bd5d46e8ff823fd83b202283e07f5d068d8 @ 1527608114 Tue, 29 May 2018 15:35:14 UTC
+RESULT: claimVesting3_1Tx status=0x1 Success gas=1000000 gasUsed=34877 costETH=0.000069754 costUSD=0.0426510833 @ ETH/USD=611.45 gasPrice=2 gwei block=138 txIx=0 txId=0xbfbc74f656f15f5205890cb089967bd5d46e8ff823fd83b202283e07f5d068d8 @ 1528138641 Mon, 04 Jun 2018 18:57:21 UTC
 undefined
 > 
 RESULT: teamAllocation.address=0x0e946b999033257976aa5cbe0e3530618ca1582d
@@ -2019,10 +2019,10 @@ undefined
 RESULT: vesting.address=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2
 RESULT: vesting.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 RESULT: vesting.beneficiary=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756
-RESULT: vesting.start=1527608051 Tue, 29 May 2018 15:34:11 UTC Wed, 30 May 2018 01:34:11 AEST
+RESULT: vesting.start=1528138578 Mon, 04 Jun 2018 18:56:18 UTC Tue, 05 Jun 2018 04:56:18 AEST
 RESULT: vesting.cliff=1
 RESULT: vesting.duration=60
-RESULT: Released 0 #150 {"amount":"10000000000000000000"}
+RESULT: Released 0 #138 {"amount":"10000000000000000000"}
 undefined
 > 
 RESULT: tokenContractAddress=0x161447c0b19ee70f1f7163a2a39023a284170a0f
@@ -2033,7 +2033,7 @@ RESULT: token.decimals=18
 RESULT: token.totalSupply=900000000
 RESULT: token.mintingFinished=true
 RESULT: token.paused=false
-RESULT: Transfer 0 #150: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=10
+RESULT: Transfer 0 #138: from=0xbcd68847ca1a2a2736cb8a4e83312c20e760b4e2 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=10
 undefined
 > 
 RESULT: 
